@@ -5,10 +5,12 @@
 </template>
 
 <script setup>
-useHead({
+useServerSeoMeta({
   title: 'malthesers',
-  meta: [
-    { name: 'description', content: 'portfolio of malthesers'}
-  ]
+  ogTitle: 'malthesers',
+  description: 'portfolio of malthesers',
+  ogDescription: 'portfolio of malthesers',
+  // ogImage: 'https://example.com/image.png',
+  // twitterCard: 'summary_large_image',
 })
 </script>
