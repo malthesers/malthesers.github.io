@@ -1,5 +1,8 @@
 {
-  "name": "nuxt-app",
+  "author": "Malthe Kusk Lauritsen",
+  "name": "malthesers",
+  "short_name": "malthesers",
+  "description": "portfolio of malthesers",
   "private": true,
   "scripts": {
     "build": "nuxt build",

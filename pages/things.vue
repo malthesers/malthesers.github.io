@@ -6,8 +6,8 @@
 
 <script setup>
 useServerSeoMeta({
-  title: 'malthesers\'s things',
-  ogTitle: 'malthesers\'s things',
+  title: 'malthesers\' things',
+  ogTitle: 'malthesers\' things',
   description: 'things of malthesers',
   ogDescription: 'things of malthesers',
   // ogImage: 'https://example.com/image.png',
