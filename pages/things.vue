@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>things</h1>
+    <h1>things i've made</h1>
     <Icon name="uil:github"/>
   </section>
 </template>

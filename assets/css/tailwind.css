@@ -6,6 +6,14 @@
   body {
     @apply bg-light text-accent font-body;
   }
+
+  h1 {
+    @apply font-display text-3xl;
+  }
+
+  h2 {
+    @apply font-display text-2xl;
+  }
 }
 
 .page-enter-active,
