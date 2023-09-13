@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-useServerSeoMeta({
+useSeoMeta({
   title: 'malthesers\' things',
   ogTitle: 'malthesers\' things',
   description: 'things of malthesers',
