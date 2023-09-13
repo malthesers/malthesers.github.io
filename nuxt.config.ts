@@ -4,7 +4,12 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@kevinmarrec/nuxt-pwa'],
+  modules: [
+    '@kevinmarrec/nuxt-pwa',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon'
+  ],
   googleFonts: {
     display: 'swap',
     families: {
