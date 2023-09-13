@@ -33,7 +33,8 @@
   transform: scaleX(0);
 }
 
-.underslide:hover::after {
+.underslide:hover::after,
+.router-link-active::after {
   transform: scaleX(1);
 }
 

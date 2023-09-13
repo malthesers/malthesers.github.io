@@ -3,7 +3,7 @@
     <h1 class="mb-4">things i've made</h1>
     <div class="grid md:grid-cols-2 gap-4">
       <article v-for="thing in things" :key="thing.name" class="bg-dark px-4 py-2 rounded-xl">
-        <h2 class="lowercase">{{ thing.name }}</h2>
+        <h2 class="mb-4 lowercase">{{ thing.name }}</h2>
         <a :href="thing.repo" rel="nofollow noreferrer noopener">
           <Icon name="uil:github"/>
         </a>
