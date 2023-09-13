@@ -8,11 +8,11 @@
   }
 
   h1 {
-    @apply font-display text-3xl;
+    @apply font-display font-medium text-3xl;
   }
 
   h2 {
-    @apply font-display text-2xl;
+    @apply font-display font-medium text-2xl;
   }
 }
 
