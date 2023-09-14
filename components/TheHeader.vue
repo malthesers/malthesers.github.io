@@ -1,6 +1,6 @@
 <template>
   <header class="fixed z-10 w-full font-display font-medium">
-    <div class="flex justify-between bg-dark px-6 py-3">
+    <div class="relative flex z-20 justify-between bg-dark px-6 py-3">
       <NuxtLink to="/" class="text-xl">malthesers</NuxtLink>
       <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
       <nav class="hidden sm:flex gap-4 place-items-center text-lg">
@@ -8,13 +8,15 @@
         <NuxtLink to="/things">things</NuxtLink>
       </nav>
     </div>
-    <aside v-if="showMenu">
-      <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
-        <NuxtLink to="/">test</NuxtLink>
-        <NuxtLink to="/things">things</NuxtLink>
-      </div>
-      <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" class="h-20 object-cover">
-    </aside>
+    <Transition name="slide">
+      <aside v-if="showMenu" class="relative z-10">
+        <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
+          <NuxtLink to="/">test</NuxtLink>
+          <NuxtLink to="/things">things</NuxtLink>
+        </div>
+        <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" class="h-20 object-cover">
+      </aside>
+    </Transition>
   </header>
 </template>
 
@@ -42,5 +44,15 @@ nav a::after {
 nav a:hover::after,
 .router-link-active::after {
   transform: scaleX(1);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateY(-100%);
 }
 </style>
