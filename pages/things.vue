@@ -7,10 +7,15 @@
           <h2 class="lowercase">{{ thing.name }}</h2>
           <p class="mb-4">{{ thing.desc }}</p>
           <div class="mt-auto flex justify-between">
-            <NuxtLink :to="thing.repo" target="_blank">
-              <Icon name="uil:github"/>
-            </NuxtLink>
-            <div>
+            <div class="flex gap-2">
+              <NuxtLink :to="thing.repo" target="_blank">
+                <Icon name="uil:github"/>
+              </NuxtLink>
+              <NuxtLink :to="thing.site" target="_blank">
+                <Icon name="uil:rocket"/>
+              </NuxtLink>
+            </div>
+            <div class="flex gap-2">
               <Icon v-if="thing.tools.includes('vue')" name="vscode-icons:file-type-vue"/>
               <Icon v-if="thing.tools.includes('tw')" name="vscode-icons:file-type-tailwind"/>
               <Icon v-if="thing.tools.includes('html')" name="vscode-icons:file-type-html"/>
