@@ -22,6 +22,18 @@
   a::after {
     @apply bg-accent;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-light;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark;
+  }
 }
 
 .page-enter-active,
