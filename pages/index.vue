@@ -1,6 +1,9 @@
 <template>
   <main>
     <SplashScreen/>
+    <section>
+      <h2>yo</h2>
+    </section>
   </main>
 </template>
 

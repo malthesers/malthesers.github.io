@@ -1,5 +1,6 @@
 <template>
-  <div class="layer-background">
+  <div class="h-[100dvh]">
+    <div class="layer-background"></div>
     <div class="layer-moon"></div>
     <div class="layer-mountain-far"></div>
     <div class="layer-mountain-near"></div>
