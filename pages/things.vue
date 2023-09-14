@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <main>
     <h1 class="mb-4">things i've made</h1>
     <div class="grid md:grid-cols-2 gap-4">
       <article v-for="thing in things" :key="thing.name" class="bg-dark px-4 py-2 rounded-xl">
@@ -16,7 +16,7 @@
         </NuxtLink>
       </article>
     </div>
-  </section>
+  </main>
 </template>
 
 <script setup>

@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <main>
     <SplashScreen/>
-  </section>
+  </main>
 </template>
 
 <script setup>
