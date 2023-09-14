@@ -1,5 +1,5 @@
 <template>
-  <section class="layer-background">
+  <div class="layer-background">
     <div class="layer-moon"></div>
     <div class="layer-mountain-far"></div>
     <div class="layer-mountain-near"></div>
@@ -8,7 +8,7 @@
     <div class="layer-mountain-far-reflection"></div>
     <div class="layer-reflection"></div>
     <div class="layer-foreground"></div>
-  </section>
+  </div>
 </template>
 
 <style scoped>
