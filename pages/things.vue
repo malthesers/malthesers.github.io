@@ -1,20 +1,22 @@
 <template>
   <main>
-    <h1 class="mb-4">things i've made</h1>
-    <section class="grid md:grid-cols-2 gap-4">
-      <article v-for="thing in things" :key="thing.name" class="bg-dark px-4 py-2 rounded-xl">
-        <h2 class="mb-4 lowercase">{{ thing.name }}</h2>
-        <div>
-          <Icon name="vscode-icons:file-type-vue"/>
-          <Icon name="vscode-icons:file-type-tailwind"/>
-          <Icon name="vscode-icons:file-type-html"/>
-          <Icon name="vscode-icons:file-type-css"/>
-          <Icon name="vscode-icons:file-type-js-official"/>
-        </div>
-        <NuxtLink :to="thing.repo" target="_blank">
-          <Icon name="uil:github"/>
-        </NuxtLink>
-      </article>
+    <section>
+      <h1 class="mb-4">things i've made</h1>
+      <div class="grid md:grid-cols-2 gap-4">
+        <article v-for="thing in things" :key="thing.name" class="bg-dark px-4 py-2 rounded-xl">
+          <h2 class="mb-4 lowercase">{{ thing.name }}</h2>
+          <div>
+            <Icon name="vscode-icons:file-type-vue"/>
+            <Icon name="vscode-icons:file-type-tailwind"/>
+            <Icon name="vscode-icons:file-type-html"/>
+            <Icon name="vscode-icons:file-type-css"/>
+            <Icon name="vscode-icons:file-type-js-official"/>
+          </div>
+          <NuxtLink :to="thing.repo" target="_blank">
+            <Icon name="uil:github"/>
+          </NuxtLink>
+        </article>
+      </div>
     </section>
   </main>
 </template>
