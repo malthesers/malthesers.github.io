@@ -4,7 +4,8 @@
       <h1 class="mb-4">things i've made</h1>
       <div class="grid md:grid-cols-2 gap-4">
         <article v-for="thing in things" :key="thing.name" class="bg-dark px-4 py-2 rounded-xl">
-          <h2 class="mb-4 lowercase">{{ thing.name }}</h2>
+          <h2 class="lowercase">{{ thing.name }}</h2>
+          <p class="mb-4">{{ thing.desc }}</p>
           <div>
             <Icon name="vscode-icons:file-type-vue"/>
             <Icon name="vscode-icons:file-type-tailwind"/>
@@ -36,14 +37,14 @@ const things = ref([
     name: 'Soulsborndle',
     repo: 'https://github.com/malthesers/soulsborndle',
     site: 'https://malthesers.github.io/soulsborndle/',
-    desc: '',
+    desc: 'A Wordle-like Souls-like web game - guess the boss by using hints from your past guesses!',
     tools: ['vuejs', 'tailwind']
   },
   {
     name: 'Pablo\'s Pizza',
     repo: 'https://github.com/malthesers/pablos-pizza',
     site: 'https://malthesers.github.io/pablos-pizza/',
-    desc: '',
+    desc: 'The famous pizzeria, Pablo\'s Pizza, is under attack and Pablo needs your help!',
     tools: ['JavaScript']
   },
 ])
