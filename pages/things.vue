@@ -45,7 +45,21 @@ const things = ref([
     repo: 'https://github.com/malthesers/pablos-pizza',
     site: 'https://malthesers.github.io/pablos-pizza/',
     desc: 'The famous pizzeria, Pablo\'s Pizza, is under attack and Pablo needs your help!',
-    tools: ['JavaScript']
+    tools: ['html', 'css', 'js']
+  },
+  {
+    name: 'Hogwarts | vue',
+    repo: 'https://github.com/malthesers/hogwarts-vue',
+    site: 'https://malthesers.github.io/hogwarts-vue/',
+    desc: 'Assume the role of a Hogwarts system administrator (but in Vue).',
+    tools: ['vuejs', 'tailwind']
+  },
+  {
+    name: 'Hogwarts',
+    repo: 'https://github.com/malthesers/hogwarts',
+    site: 'https://malthesers.github.io/hogwarts/',
+    desc: 'Assume the role of a Hogwarts system administrator.',
+    tools: ['html', 'css', 'js']
   },
 ])
 </script>
