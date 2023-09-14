@@ -9,12 +9,12 @@
 </template>
 
 <style scoped>
-a {
+nav a {
   position: relative;
   display: inline-block;
 }
 
-a::after {
+nav a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -25,7 +25,7 @@ a::after {
   transform: scaleX(0);
 }
 
-a:hover::after,
+nav a:hover::after,
 .router-link-active::after {
   transform: scaleX(1);
 }
