@@ -1,6 +1,7 @@
 <template>
   <main>
     <SplashScreen/>
+    <CavernTopTransition/>
     <section>
       <h2>yo</h2>
     </section>
