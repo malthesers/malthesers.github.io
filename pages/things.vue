@@ -8,10 +8,10 @@
           <p class="mb-4">{{ thing.desc }}</p>
           <div class="mt-auto flex justify-between">
             <div class="flex gap-2">
-              <NuxtLink :to="thing.repo" target="_blank">
+              <NuxtLink :to="thing.repo" target="_blank" class="duration-200 hover:opacity-75">
                 <Icon name="uil:github"/>
               </NuxtLink>
-              <NuxtLink :to="thing.site" target="_blank">
+              <NuxtLink :to="thing.site" target="_blank" class="duration-200 hover:opacity-75">
                 <Icon name="uil:rocket"/>
               </NuxtLink>
             </div>
