@@ -1,10 +1,10 @@
 <template>
   <article @click="flip = !flip" class="h-80">
     <div :class="{ 'card-flip' : flip }" class="relative h-full duration-700 ease-in-out">
-      <div class="absolute w-full h-full bg-dark grid place-content-center backface-hidden">
+      <div class="absolute w-full h-full bg-dark backface-hidden grid place-content-center">
         <p>m</p>
       </div>
-      <div class="absolute w-full h-full bg-dark flex flex-col px-4 py-2 backface-hidden">
+      <div class="absolute w-full h-full bg-dark backface-hidden flex flex-col px-4 py-2">
         <h2 class="lowercase">{{ thing.name }}</h2>
         <p class="mb-4">{{ thing.desc }}</p>
         <div class="mt-auto flex justify-between">
@@ -36,3 +36,14 @@ const props = defineProps({
 
 const flip = ref(false)
 </script>
+
+<style scoped>
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-flip {
+  transform: perspective(20rem) rotateY(180deg);
+}
+</style>
