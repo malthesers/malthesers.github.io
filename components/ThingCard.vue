@@ -1,11 +1,11 @@
 <template>
-  <article @click="flip = !flip" class="h-96">
+  <article class="h-96">
     <div :class="{ 'card-flip' : flip }" class="relative h-full preserve-3d duration-700 ease-in-out">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
       </div>
       <div :style="{ backgroundImage: `url(/images/things/${thing.image}.png)` }" class="absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
-        <div class="bg-dark bg-opacity-75 mt-auto p-4">
+        <div class="bg-dark bg-opacity-75 mt-auto p-4 rounded-b-xl">
           <h2 class="lowercase">{{ thing.name }}</h2>
           <p class="mb-4">{{ thing.desc }}</p>
           <div class="flex justify-between">
