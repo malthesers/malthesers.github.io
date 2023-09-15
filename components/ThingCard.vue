@@ -1,11 +1,11 @@
 <template>
-  <article @click="flip = !flip" class="h-80">
+  <article @click="flip = !flip" class="h-96">
     <div :class="{ 'card-flip' : flip }" class="relative h-full preserve-3d duration-700 ease-in-out">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
       </div>
-      <div :class="'bg-[url(/images/things/soulsborndle.png)] bg-cover bg-center'" class="absolute w-full h-full rounded-xl backface-hidden flex flex-col">
-        <div class="bg-dark bg-opacity-70 mt-auto p-4">
+      <div :style="{ backgroundImage: `url(/images/things/${thing.image}.png)` }" class="absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
+        <div class="bg-dark bg-opacity-75 mt-auto p-4">
           <h2 class="lowercase">{{ thing.name }}</h2>
           <p class="mb-4">{{ thing.desc }}</p>
           <div class="flex justify-between">
@@ -40,7 +40,10 @@ const flip = ref(false)
 </script>
 
 <style scoped>
+article > div {
+  transform: perspective(40rem);
+}
 .card-flip {
-  transform: perspective(40rem) rotateY(180deg);
+  transform: rotateY(180deg);
 }
 </style>
