@@ -23,6 +23,10 @@
   background-size: cover;
 }
 
+[class^='layer']:not(:last-of-type) {
+  background-attachment: fixed;
+}
+
 .layer-background {
   background-image: url(assets/images/splash-layers/layer-background.svg);
   overflow: hidden;
