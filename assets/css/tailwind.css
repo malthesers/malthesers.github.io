@@ -36,6 +36,15 @@
   }
 }
 
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-flip {
+  transform: perspective(20rem) rotateY(180deg);
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: all 250ms;

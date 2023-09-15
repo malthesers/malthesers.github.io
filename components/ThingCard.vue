@@ -1,22 +1,29 @@
 <template>
-  <article class="bg-dark flex flex-col px-4 py-2 rounded-xl">
-    <h2 class="lowercase">{{ thing.name }}</h2>
-    <p class="mb-4">{{ thing.desc }}</p>
-    <div class="mt-auto flex justify-between">
-      <div class="flex gap-2">
-        <NuxtLink :to="thing.repo" target="_blank" class="duration-200 hover:opacity-75">
-          <Icon name="uil:github"/>
-        </NuxtLink>
-        <NuxtLink :to="thing.site" target="_blank" class="duration-200 hover:opacity-75">
-          <Icon name="uil:rocket"/>
-        </NuxtLink>
+  <article @click="flip = !flip" class="h-80">
+    <div :class="{ 'card-flip' : flip }" class="relative h-full duration-700 ease-in-out">
+      <div class="absolute w-full h-full bg-dark grid place-content-center backface-hidden">
+        <p>m</p>
       </div>
-      <div class="flex gap-2">
-        <Icon v-if="thing.tools.includes('vue')" name="vscode-icons:file-type-vue"/>
-        <Icon v-if="thing.tools.includes('tw')" name="vscode-icons:file-type-tailwind"/>
-        <Icon v-if="thing.tools.includes('html')" name="vscode-icons:file-type-html"/>
-        <Icon v-if="thing.tools.includes('css')" name="vscode-icons:file-type-css"/>
-        <Icon v-if="thing.tools.includes('js')" name="vscode-icons:file-type-js-official"/>
+      <div class="absolute w-full h-full bg-dark flex flex-col px-4 py-2 backface-hidden">
+        <h2 class="lowercase">{{ thing.name }}</h2>
+        <p class="mb-4">{{ thing.desc }}</p>
+        <div class="mt-auto flex justify-between">
+          <div class="flex gap-2">
+            <NuxtLink :to="thing.repo" target="_blank" class="duration-200 hover:opacity-75">
+              <Icon name="uil:github"/>
+            </NuxtLink>
+            <NuxtLink :to="thing.site" target="_blank" class="duration-200 hover:opacity-75">
+              <Icon name="uil:rocket"/>
+            </NuxtLink>
+          </div>
+          <div class="flex gap-2">
+            <Icon v-if="thing.tools.includes('vue')" name="vscode-icons:file-type-vue"/>
+            <Icon v-if="thing.tools.includes('tw')" name="vscode-icons:file-type-tailwind"/>
+            <Icon v-if="thing.tools.includes('html')" name="vscode-icons:file-type-html"/>
+            <Icon v-if="thing.tools.includes('css')" name="vscode-icons:file-type-css"/>
+            <Icon v-if="thing.tools.includes('js')" name="vscode-icons:file-type-js-official"/>
+          </div>
+        </div>
       </div>
     </div>
   </article>
@@ -26,4 +33,6 @@
 const props = defineProps({
   thing: Object
 })
+
+const flip = ref(false)
 </script>
