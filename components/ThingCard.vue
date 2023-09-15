@@ -41,6 +41,6 @@ const flip = ref(false)
 
 <style scoped>
 .card-flip {
-  transform: perspective(20rem) rotateY(180deg);
+  transform: perspective(40rem) rotateY(180deg);
 }
 </style>
