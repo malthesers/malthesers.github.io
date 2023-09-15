@@ -1,7 +1,7 @@
 <template>
   <main>
-    <section>
-      <h1 class="mb-4">things i've made</h1>
+    <section class="space-y-4">
+      <h1>things i've made</h1>
       <div class="grid md:grid-cols-2 gap-4">
         <ThingCard v-for="thing in things" :key="thing.name" :thing="thing"/>
       </div>
