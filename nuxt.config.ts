@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     baseURL: '/',
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  nitro: {
+    preset: 'github-pages'
+  },
   devtools: { enabled: true },
   modules: [
     '@kevinmarrec/nuxt-pwa',
