@@ -8,8 +8,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preview": "npx serve .output/public",
+    "deploy": "npx gh-pages -d .output/public -t true"
   },
   "devDependencies": {
     "@kevinmarrec/nuxt-pwa": "^0.17.0",
