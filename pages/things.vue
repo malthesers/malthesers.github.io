@@ -3,13 +3,20 @@
     <section class="space-y-4">
       <h1>things i've made</h1>
       <div class="flex gap-4">
-        <Icon name="skill-icons:vuejs-light"/>
+        <Icon name="vscode-icons:file-type-vue"/>
+        <Icon name="vscode-icons:file-type-reactjs"/>
+        <Icon name="vscode-icons:file-type-tailwind"/>
+        <Icon name="vscode-icons:file-type-scss"/>
+        <Icon name="vscode-icons:file-type-html"/>
+        <Icon name="vscode-icons:file-type-css"/>
+        <Icon name="vscode-icons:file-type-js-official"/>
+        <!-- <Icon name="skill-icons:vuejs-light"/>
         <Icon name="skill-icons:react-light"/>
         <Icon name="skill-icons:tailwindcss-light"/>
         <Icon name="skill-icons:sass"/>
         <Icon name="skill-icons:html"/>
         <Icon name="skill-icons:css"/>
-        <Icon name="skill-icons:javascript"/>
+        <Icon name="skill-icons:javascript"/> -->
       </div>
       <div class="grid md:grid-cols-2 gap-4">
         <TransitionGroup name="flip">
