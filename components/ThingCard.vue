@@ -33,11 +33,11 @@
   </article>
 </template>
 
-<script setup>
-const props = defineProps({
-  thing: Object,
+<script setup lang="ts">
+const props = defineProps<{
+  thing: Thing,
   index: Number
-})
+}>()
 
 const flipped = ref(true)
 
