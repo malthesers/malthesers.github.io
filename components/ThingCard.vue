@@ -20,11 +20,11 @@
             </div>
             <div class="flex gap-2">
               <Icon v-if="thing.tools.includes('vue')" name="vscode-icons:file-type-vue" />
-              <Icon v-if="thing.tools.includes('tw')" name="vscode-icons:file-type-tailwind" />
               <Icon v-if="thing.tools.includes('react')" name="vscode-icons:file-type-reactjs" />
+              <Icon v-if="thing.tools.includes('js')" name="vscode-icons:file-type-js-official" />
               <Icon v-if="thing.tools.includes('html')" name="vscode-icons:file-type-html" />
               <Icon v-if="thing.tools.includes('css')" name="vscode-icons:file-type-css" />
-              <Icon v-if="thing.tools.includes('js')" name="vscode-icons:file-type-js-official" />
+              <Icon v-if="thing.tools.includes('tw')" name="vscode-icons:file-type-tailwind" />
             </div>
           </div>
         </div>
@@ -35,18 +35,19 @@
 
 <script setup>
 const props = defineProps({
-  thing: Object
+  thing: Object,
+  index: Number
 })
 
 const flip = ref(true)
 </script>
 
 <style scoped>
-article>div {
+/* article>div {
   transform: perspective(40rem);
 }
 
 article:hover .card-flip {
   transform: rotateY(180deg);
-}
+} */
 </style>

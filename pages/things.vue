@@ -20,7 +20,7 @@
       </div>
       <div class="grid md:grid-cols-2 gap-4">
         <TransitionGroup name="flip">
-          <ThingCard v-for="thing in things" :key="thing.name" :thing="thing" />
+          <ThingCard v-for="(thing, index) in things" :key="thing.name" :thing="thing" :index="index" />
         </TransitionGroup>
       </div>
     </section>

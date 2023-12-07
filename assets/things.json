@@ -24,6 +24,14 @@
     "image": "hogwarts"
   },
   {
+    "name": "Hogwarts | React",
+    "repo": "https://github.com/malthesers/hogwarts-react",
+    "site": "https://malthesers.github.io/hogwarts-react/",
+    "desc": "Assume the role of a Hogwarts system administrator (but in React).",
+    "tools": ["react", "tw"],
+    "image": "hogwarts"
+  },
+  {
     "name": "Hogwarts",
     "repo": "https://github.com/malthesers/hogwarts",
     "site": "https://malthesers.github.io/hogwarts/",
