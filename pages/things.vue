@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import things from '~/assets/things.json'
+import { things } from '~/assets/things.ts'
 
 useSeoMeta({
   title: 'malthesers\' things',
