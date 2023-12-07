@@ -1,4 +1,4 @@
-export const things = [
+export const things:Thing[] = [
   {
     name: "Soulsborndle",
     repo: "https://github.com/malthesers/soulsborndle",
