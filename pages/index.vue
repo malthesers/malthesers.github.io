@@ -1,7 +1,7 @@
 <template>
   <main>
-    <SplashScreen/>
-    <CavernTopTransition/>
+    <SplashScreen />
+    <CavernTopTransition />
     <section>
       <h2>yo</h2>
     </section>
