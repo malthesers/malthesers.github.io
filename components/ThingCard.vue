@@ -1,6 +1,6 @@
 <template>
   <article class="h-96">
-    <div :class="{ 'card-flip': flip }" class="relative h-full preserve-3d duration-700 ease-in-out">
+    <div :class="{ 'flipped': flipped }" class="relative h-full preserve-3d duration-700 ease-in-out transform">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
       </div>
@@ -39,15 +39,17 @@ const props = defineProps({
   index: Number
 })
 
-const flip = ref(true)
+const flipped = ref(true)
+
+onMounted(() => flipped.value = false)
 </script>
 
 <style scoped>
-/* article>div {
+article>div {
   transform: perspective(40rem);
 }
 
-article:hover .card-flip {
+.flipped {
   transform: rotateY(180deg);
-} */
+}
 </style>
