@@ -1,6 +1,6 @@
 <template>
   <article class="h-96">
-    <div class="flipped relative h-full preserve-3d duration-700 ease-in-out">
+    <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
       </div>
@@ -36,15 +36,13 @@
 <script setup lang="ts">
 const props = defineProps<{
   thing: Thing,
-  index: Number
+  index: number
 }>()
+
+const animation = computed<string>(() => `flipped 500ms ease-in ${props.index * 100}ms both`)
 </script>
 
-<style scoped>
-.flipped {
-  animation: flipped 500ms ease-in both;
-}
-
+<style>
 @keyframes flipped {
   0% {
     transform: perspective(40rem) rotateY(180deg);
