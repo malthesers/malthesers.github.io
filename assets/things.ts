@@ -1,5 +1,13 @@
 export const things:Thing[] = [
   {
+    name: "Diable III",
+    repo: "https://github.com/malthesers/diable-3",
+    site: "https://diable-3.vercel.app/",
+    desc: "Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties!",
+    image: "diable-3",
+    tools: ["react", "tw"]
+  },
+  {
     name: "Soulsborndle",
     repo: "https://github.com/malthesers/soulsborndle",
     site: "https://malthesers.github.io/soulsborndle/",
