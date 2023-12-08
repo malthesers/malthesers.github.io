@@ -1,6 +1,6 @@
 <template>
   <article class="h-96">
-    <div :class="{ 'flipped': flipped }" class="relative h-full preserve-3d duration-700 ease-in-out transform">
+    <div class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
       </div>
@@ -38,18 +38,20 @@ const props = defineProps<{
   thing: Thing,
   index: Number
 }>()
-
-const flipped = ref(true)
-
-onMounted(() => flipped.value = false)
 </script>
 
 <style scoped>
-article>div {
-  transform: perspective(40rem);
+.flipped {
+  animation: flipped 500ms ease-in both;
 }
 
-.flipped {
-  transform: rotateY(180deg);
+@keyframes flipped {
+  0% {
+    transform: perspective(40rem) rotateY(180deg);
+  }
+
+  100% {
+    transform: perspective(40rem) rotateY(0deg);
+  }
 }
 </style>
