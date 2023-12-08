@@ -38,10 +38,6 @@ useSeoMeta({
   // ogImage: 'https://example.com/image.png',
   // twitterCard: 'summary_large_image',
 })
-
-onMounted(() => {
-  console.log('yoyoyo')
-})
 </script>
 
 <style scoped>
