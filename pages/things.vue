@@ -11,13 +11,6 @@
         <Icon name="devicon:css3" />
         <Icon name="devicon:javascript" />
         <Icon name="devicon:typescript" />
-        <!-- <Icon name="skill-icons:vuejs-light"/>
-        <Icon name="skill-icons:react-light"/>
-        <Icon name="skill-icons:tailwindcss-light"/>
-        <Icon name="skill-icons:sass"/>
-        <Icon name="skill-icons:html"/>
-        <Icon name="skill-icons:css"/>
-        <Icon name="skill-icons:javascript"/> -->
       </div>
       <div class="flex flex-wrap gap-4">
         <TransitionGroup name="flip">
