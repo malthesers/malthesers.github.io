@@ -20,7 +20,7 @@ export const things:Thing[] = [
     repo: "https://github.com/malthesers/pablos-pizza",
     site: "https://malthesers.github.io/pablos-pizza/",
     desc: "The famous pizzeria, Pablo's Pizza, is under attack and Pablo needs your help!",
-    image: "soulsborndle.png",
+    image: "pablos-pizza.png",
     tools: ["html", "css", "js"]
   },
   {
