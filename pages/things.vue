@@ -18,7 +18,7 @@
         <Icon name="skill-icons:css"/>
         <Icon name="skill-icons:javascript"/> -->
       </div>
-      <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex flex-wrap gap-4">
         <TransitionGroup name="flip">
           <ThingCard v-for="(thing, index) in things" :key="thing.name" :thing="thing" :index="index" />
         </TransitionGroup>

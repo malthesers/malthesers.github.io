@@ -1,5 +1,5 @@
 <template>
-  <article class="h-96">
+  <article class="w-[18rem] h-[30rem]">
     <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
         <p class="text-3xl">m</p>
