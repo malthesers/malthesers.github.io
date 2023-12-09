@@ -4,7 +4,7 @@ export const things:Thing[] = [
     repo: "https://github.com/malthesers/diable-3",
     site: "https://diable-3.vercel.app/",
     desc: "Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties!",
-    image: "diable-3.jpg",
+    image: "diable-3.png",
     tools: ["react", "tw"]
   },
   {
