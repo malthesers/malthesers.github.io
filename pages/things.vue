@@ -3,13 +3,14 @@
     <section class="space-y-4">
       <h1>things i've made</h1>
       <div class="flex gap-4">
-        <Icon name="vscode-icons:file-type-vue" />
-        <Icon name="vscode-icons:file-type-reactjs" />
-        <Icon name="vscode-icons:file-type-tailwind" />
-        <Icon name="vscode-icons:file-type-scss" />
-        <Icon name="vscode-icons:file-type-html" />
-        <Icon name="vscode-icons:file-type-css" />
-        <Icon name="vscode-icons:file-type-js-official" />
+        <Icon name="devicon:vuejs" />
+        <Icon name="devicon:react" />
+        <Icon name="devicon:tailwindcss" />
+        <Icon name="devicon:sass" />
+        <Icon name="devicon:html5" />
+        <Icon name="devicon:css3" />
+        <Icon name="devicon:javascript" />
+        <Icon name="devicon:typescript" />
         <!-- <Icon name="skill-icons:vuejs-light"/>
         <Icon name="skill-icons:react-light"/>
         <Icon name="skill-icons:tailwindcss-light"/>

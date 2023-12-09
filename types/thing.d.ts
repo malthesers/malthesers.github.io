@@ -7,4 +7,4 @@ interface Thing {
   tools: Icon[],
 }
 
-type Icon = 'vue' | 'react' | 'js' | 'html' | 'css' | 'tw'
+type Icon = 'vue' | 'react' | 'js' | 'html' | 'css' | 'scss' | 'tw'
