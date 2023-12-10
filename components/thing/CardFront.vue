@@ -1,9 +1,11 @@
 <template>
   <div :style="{ backgroundImage: `url(/images/things/${thing.image})` }"
-    class="absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
+    class="group absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
     <div class="bg-dark bg-opacity-75 mt-auto p-4 rounded-b-xl">
-      <h2 class="lowercase text-center">{{ thing.name }}</h2>
-      <p class="mb-4 text-center">{{ thing.desc }}</p>
+      <div class="text-center overflow-hidden mb-4">
+        <h2 class="lowercase">{{ thing.name }}</h2>
+        <p class="max-h-0 duration-300 group-hover:max-h-20">{{ thing.desc }}</p>
+      </div>
       <div class="flex justify-between">
         <div class="flex gap-2">
           <NuxtLink :to="thing.repo" target="_blank" class="duration-200 hover:opacity-75">
