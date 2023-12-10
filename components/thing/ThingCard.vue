@@ -2,13 +2,7 @@
   <article class="w-[18rem] h-[30rem]">
     <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <!-- Card back -->
-      <div class="absolute w-full h-full bg-land rounded-xl overflow-hidden">
-        <div class="w-full h-full flex flex-col justify-between border-dark border-8">
-          <CavernTopTransition />
-          <img src="~/assets/images/moon.png" alt="moon" class="w-20 self-center transform rotate-180">
-          <CavernTopTransition class="transform rotate-180" />
-        </div>
-      </div>
+      <CardBack />
       <!-- Card front -->
       <div :style="{ backgroundImage: `url(/images/things/${thing.image})` }"
         class="absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
@@ -45,7 +39,7 @@ const props = defineProps<{
   index: number
 }>()
 
-const enableFlip = ref<boolean>(false)
+const enableFlip = ref<boolean>(true)
 
 const animation = computed<string>(() => enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : '')
 </script>
