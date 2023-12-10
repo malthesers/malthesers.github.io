@@ -7,6 +7,7 @@ module.exports = {
       body: ["Roboto", "system-ui", "sans-serif"],
     },
     colors: {
+      base: "#150027",
       dark: "#100019",
       light: "#29003D",
       accent: "#FFEED3",

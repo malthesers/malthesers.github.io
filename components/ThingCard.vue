@@ -1,9 +1,13 @@
 <template>
   <article class="w-[18rem] h-[30rem]">
     <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
-      <div class="absolute w-full h-full bg-dark rounded-xl grid place-content-center">
-        <p class="text-3xl">m</p>
+      <!-- Card back -->
+      <div class="absolute w-full h-full bg-dark rounded-xl p-4">
+        <div class="w-full h-full grid place-content-center border-accent border-2 rounded-lg">
+          <p class="text-3xl">m</p>
+        </div>
       </div>
+      <!-- Card front -->
       <div :style="{ backgroundImage: `url(/images/things/${thing.image})` }"
         class="absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
         <div class="bg-dark bg-opacity-75 mt-auto p-4 rounded-b-xl">
