@@ -2,9 +2,11 @@
   <article class="w-[18rem] h-[30rem]">
     <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <!-- Card back -->
-      <div class="absolute w-full h-full bg-dark rounded-xl p-4">
-        <div class="w-full h-full grid place-content-center border-accent border-2 rounded-lg">
-          <p class="text-3xl">m</p>
+      <div class="absolute w-full h-full bg-land rounded-xl overflow-hidden">
+        <div class="w-full h-full flex flex-col justify-between border-dark border-8">
+          <CavernTopTransition />
+          <p class="text-3xl text-center">m</p>
+          <CavernTopTransition class="transform rotate-180" />
         </div>
       </div>
       <!-- Card front -->
