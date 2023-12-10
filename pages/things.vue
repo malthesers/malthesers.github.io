@@ -12,7 +12,7 @@
         <Icon name="devicon:javascript" />
         <Icon name="devicon:typescript" />
       </div>
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 justify-center">
         <TransitionGroup name="flip">
           <ThingCard v-for="(thing, index) in things" :key="thing.name" :thing="thing" :index="index" />
         </TransitionGroup>

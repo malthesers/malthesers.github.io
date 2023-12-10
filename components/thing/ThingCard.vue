@@ -1,5 +1,5 @@
 <template>
-  <article class="w-[18rem] h-[30rem]">
+  <article class="w-[18rem] h-[29rem]">
     <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <!-- Card back -->
       <ThingCardBack />
