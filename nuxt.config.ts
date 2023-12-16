@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       Roboto: [400, 500],
       Montserrat: [400, 500, 600],
       Spectral: [500, 600],
-      Merienda: [500]
+      Merienda: [500],
     }
   }
 })
