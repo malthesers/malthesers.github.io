@@ -37,7 +37,7 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["vue", "tw"],
     textColour: '#FAECBF',
-    fadeColour: '##392A48'
+    fadeColour: '#2F223A'
   },
   {
     name: "Hogwarts | React",
@@ -47,7 +47,7 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["react", "tw"],
     textColour: '#FAECBF',
-    fadeColour: '##392A48'
+    fadeColour: '#2F223A'
   },
   {
     name: "Hogwarts",
@@ -57,6 +57,6 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["html", "css", "js"],
     textColour: '#FAECBF',
-    fadeColour: '##392A48'
+    fadeColour: '#2F223A'
   }
 ]
