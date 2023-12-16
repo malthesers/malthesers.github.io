@@ -16,7 +16,11 @@ module.exports = {
         light: "#29003D",
         accent: "#FFEED3",
       },
-    }
+    },
+    safelist: [
+      'font-spectral',
+      'font-merienda'
+    ]
   },
   plugins: [],
 };

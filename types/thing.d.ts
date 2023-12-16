@@ -5,6 +5,11 @@ interface Thing {
   desc: string,
   image: string
   tools: Icon[],
+  appearance: Appearance
+}
+
+interface Appearance {
+  fontFamily: string,
   textColour: string,
   borderColour: string,
 }

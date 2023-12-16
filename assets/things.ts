@@ -6,8 +6,11 @@ export const things:Thing[] = [
     desc: "Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties!",
     image: "diable-3.png",
     tools: ["react", "tw"],
-    textColour: '#FFFFFF',
-    borderColour: '#0C0C0E'
+    appearance: {
+      fontFamily: 'spectral',
+      textColour: '#FFFFFF',
+      borderColour: '#0C0C0E'
+    }
   },
   {
     name: "Soulsborndle",
@@ -16,8 +19,11 @@ export const things:Thing[] = [
     desc: "A Wordle-like Souls-like web game - guess the boss by using hints from your past guesses!",
     image: "soulsborndle.png",
     tools: ["vue", "tw"],
-    textColour: '#EA836D',
-    borderColour: '#0C0C0E'
+    appearance: {
+      fontFamily: 'spectral',
+      textColour: '#EA836D',
+      borderColour: '#0C0C0E'
+    }
   },
   {
     name: "Pablo's Pizza",
@@ -26,8 +32,11 @@ export const things:Thing[] = [
     desc: "The famous pizzeria, Pablo's Pizza, is under attack and Pablo needs your help!",
     image: "pablos-pizza.png",
     tools: ["html", "css", "js"],
-    textColour: '#000000',
-    borderColour: '#AFE1F4'
+    appearance: {
+      fontFamily: '',
+      textColour: '#000000',
+      borderColour: '#AFE1F4'
+    }
   },
   {
     name: "Hogwarts | Vue",
@@ -36,8 +45,11 @@ export const things:Thing[] = [
     desc: "Assume the role of a Hogwarts system administrator (but in Vue).",
     image: "hogwarts.png",
     tools: ["vue", "tw"],
-    textColour: '#FAECBF',
-    borderColour: '#2F223A'
+    appearance: {
+      fontFamily: 'merienda',
+      textColour: '#FAECBF',
+      borderColour: '#2F223A'
+    }
   },
   {
     name: "Hogwarts | React",
@@ -46,8 +58,11 @@ export const things:Thing[] = [
     desc: "Assume the role of a Hogwarts system administrator (but in React).",
     image: "hogwarts.png",
     tools: ["react", "tw"],
-    textColour: '#FAECBF',
-    borderColour: '#2F223A'
+    appearance: {
+      fontFamily: 'merienda',
+      textColour: '#FAECBF',
+      borderColour: '#2F223A'
+    }
   },
   {
     name: "Hogwarts",
@@ -56,7 +71,10 @@ export const things:Thing[] = [
     desc: "Assume the role of a Hogwarts system administrator.",
     image: "hogwarts.png",
     tools: ["html", "css", "js"],
-    textColour: '#FAECBF',
-    borderColour: '#2F223A'
+    appearance: {
+      fontFamily: 'merienda',
+      textColour: '#FAECBF',
+      borderColour: '#2F223A'
+    }
   }
 ]
