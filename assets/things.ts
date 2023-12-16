@@ -7,7 +7,7 @@ export const things:Thing[] = [
     image: "diable-3.png",
     tools: ["react", "tw"],
     textColour: '#FFFFFF',
-    fadeColour: '#000000'
+    borderColour: '#0C0C0E'
   },
   {
     name: "Soulsborndle",
@@ -16,8 +16,8 @@ export const things:Thing[] = [
     desc: "A Wordle-like Souls-like web game - guess the boss by using hints from your past guesses!",
     image: "soulsborndle.png",
     tools: ["vue", "tw"],
-    textColour: '#FFFFFF',
-    fadeColour: '#000000'
+    textColour: '#EA836D',
+    borderColour: '#0C0C0E'
   },
   {
     name: "Pablo's Pizza",
@@ -27,7 +27,7 @@ export const things:Thing[] = [
     image: "pablos-pizza.png",
     tools: ["html", "css", "js"],
     textColour: '#000000',
-    fadeColour: '#FFFFFF'
+    borderColour: '#AFE1F4'
   },
   {
     name: "Hogwarts | Vue",
@@ -37,7 +37,7 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["vue", "tw"],
     textColour: '#FAECBF',
-    fadeColour: '#2F223A'
+    borderColour: '#2F223A'
   },
   {
     name: "Hogwarts | React",
@@ -47,7 +47,7 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["react", "tw"],
     textColour: '#FAECBF',
-    fadeColour: '#2F223A'
+    borderColour: '#2F223A'
   },
   {
     name: "Hogwarts",
@@ -57,6 +57,6 @@ export const things:Thing[] = [
     image: "hogwarts.png",
     tools: ["html", "css", "js"],
     textColour: '#FAECBF',
-    fadeColour: '#2F223A'
+    borderColour: '#2F223A'
   }
 ]
