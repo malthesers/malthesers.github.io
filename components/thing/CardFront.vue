@@ -1,7 +1,7 @@
 <template>
   <div :style="{ backgroundImage: `url(/images/things/${thing.image})` }"
     class="group absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat">
-    <div class="bg-dark bg-opacity-75 mt-auto p-4 rounded-b-xl">
+    <div class="bg-gradient-to-t from-black/50 mt-auto p-4 rounded-b-xl">
       <div class="text-center overflow-hidden mb-4">
         <h2 class="lowercase">{{ thing.name }}</h2>
         <p class="max-h-0 duration-300 group-hover:max-h-20">{{ thing.desc }}</p>
