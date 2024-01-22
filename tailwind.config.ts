@@ -18,11 +18,11 @@ module.exports = {
         accent: "#FFEED3",
       },
     },
-    safelist: [
-      'font-spectral',
-      'font-merienda',
-      'font-sacramento'
-    ]
   },
+  safelist: [
+    'font-spectral',
+    'font-merienda',
+    'font-sacramento'
+  ],
   plugins: [],
 };
