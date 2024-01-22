@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       display: ["Montserrat", "system-ui", "sans-serif"],
       body: ["Roboto", "system-ui", "sans-serif"],
+      jua: ["Jua", "system-ui", "sans-serif"],
       spectral: ['Spectral', 'system-ui', 'serif'],
       merienda: ['Merienda', 'system-ui', 'serif'],
       sacramento: ['Sacramento', 'system-ui', 'serif'],
@@ -20,6 +21,7 @@ module.exports = {
     },
   },
   safelist: [
+    'font-jua',
     'font-spectral',
     'font-merienda',
     'font-sacramento'
