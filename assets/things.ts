@@ -46,7 +46,7 @@ export const things:Thing[] = [
     image: "pablos-pizza.png",
     tools: ["html", "css", "js"],
     appearance: {
-      fontFamily: '',
+      fontFamily: 'jua',
       textColour: '#000000',
       borderColour: '#AFE1F4'
     }

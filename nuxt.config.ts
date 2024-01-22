@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     families: {
       Roboto: [400, 500],
       Montserrat: [400, 500, 600],
+      Jua: [400],
       Spectral: [500, 600],
       Merienda: [500],
       Sacramento: [400]
