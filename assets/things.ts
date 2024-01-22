@@ -13,6 +13,19 @@ export const things:Thing[] = [
     }
   },
   {
+    name: "Hallmark Christmatch",
+    repo: "https://github.com/malthesers/hallmark-christmatch",
+    site: "https://malthesers.github.io/hallmark-christmatch/",
+    desc: "A concentration and memory game inspired by the most unpredictable and unique Christmas movies.",
+    image: "christmatch.png",
+    tools: ["vue", "tw"],
+    appearance: {
+      fontFamily: 'sacramento',
+      textColour: '#FFFFFF',
+      borderColour: '#FFFFFF'
+    }
+  },
+  {
     name: "Soulsborndle",
     repo: "https://github.com/malthesers/soulsborndle",
     site: "https://malthesers.github.io/soulsborndle/",
