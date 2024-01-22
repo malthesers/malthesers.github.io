@@ -9,14 +9,14 @@ export const things:Thing[] = [
     appearance: {
       fontFamily: 'spectral',
       textColour: '#FFFFFF',
-      borderColour: '#0C0C0E'
+      borderColour: '#231E20'
     }
   },
   {
     name: "Hallmark Christmatch",
     repo: "https://github.com/malthesers/hallmark-christmatch",
     site: "https://malthesers.github.io/hallmark-christmatch/",
-    desc: "A concentration and memory game inspired by the most unpredictable and unique Christmas movies.",
+    desc: "A memory game inspired by the most unpredictable and unique Christmas movies.",
     image: "christmatch.png",
     tools: ["vue", "tw"],
     appearance: {
