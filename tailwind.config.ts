@@ -7,6 +7,7 @@ module.exports = {
       body: ["Roboto", "system-ui", "sans-serif"],
       spectral: ['Spectral', 'system-ui', 'serif'],
       merienda: ['Merienda', 'system-ui', 'serif'],
+      sacramento: ['Sacramento', 'system-ui', 'serif'],
     },
     extend: {
       colors: {
@@ -19,7 +20,8 @@ module.exports = {
     },
     safelist: [
       'font-spectral',
-      'font-merienda'
+      'font-merienda',
+      'font-sacramento'
     ]
   },
   plugins: [],

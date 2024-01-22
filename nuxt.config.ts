@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       Montserrat: [400, 500, 600],
       Spectral: [500, 600],
       Merienda: [500],
+      Sacramento: [400]
     }
   }
 })
