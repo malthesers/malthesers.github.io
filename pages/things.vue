@@ -52,6 +52,6 @@ const icons = ref({
 
 const activeFilters: Ref<Icon[]> = ref([])
 const filteredThings: Ref<Thing[]> = computed(() => {
-  return things.filter((thing) => thing.tools.includes(activeFilters.value[0]))
+  return things.filter((thing) => activeFilters.value.every((filter) => thing.tools.includes(filter)))
 })
 </script>
