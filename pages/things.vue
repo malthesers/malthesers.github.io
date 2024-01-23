@@ -2,20 +2,11 @@
   <main>
     <section class="space-y-4">
       <h1>things i've made</h1>
-      <div class="flex gap-4">
-        <label v-for="tool in tools" :key="tool" :for="tool">
-          <input v-model="activeFilters" type="checkbox" :value="tool" :id="tool" class="appearance-none" />
-          <Icon :name="'devicon:' + icons[tool]" />
+      <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
+        <label v-for="tool in tools" :key="tool.name" :for="tool.name">
+          <input v-model="activeFilters" type="checkbox" :value="tool.name" :id="tool.name" class="appearance-none" />
+          <Icon :name="'devicon:' + tool.icon" />
         </label>
-
-        <!-- <Icon :name="'devicon:vuejs'" />
-        <Icon name="devicon:react" />
-        <Icon name="devicon:tailwindcss" />
-        <Icon name="devicon:sass" />
-        <Icon name="devicon:html5" />
-        <Icon name="devicon:css3" />
-        <Icon name="devicon:javascript" />
-        <Icon name="devicon:typescript" /> -->
       </div>
       <div class="flex flex-wrap gap-4 justify-center">
         <TransitionGroup name="flip">
@@ -28,6 +19,7 @@
 
 <script setup lang="ts">
 import { things } from '~/assets/things'
+import { tools } from '~/assets/tools'
 
 useSeoMeta({
   title: "malthesers' things",
@@ -38,19 +30,7 @@ useSeoMeta({
   // twitterCard: 'summary_large_image',
 })
 
-const tools: Ref<Icon[]> = ref(['vue', 'react', 'tw', 'scss', 'html', 'css', 'js', 'ts'])
-const icons = ref({
-  vue: 'vuejs',
-  react: 'react',
-  tw: 'tailwindcss',
-  scss: 'sass',
-  html: 'html5',
-  css: 'css3',
-  js: 'javascript',
-  ts: 'typescript'
-})
-
-const activeFilters: Ref<Icon[]> = ref([])
+const activeFilters: Ref<ToolName[]> = ref([])
 const filteredThings: Ref<Thing[]> = computed(() => {
   return things.filter((thing) => activeFilters.value.every((filter) => thing.tools.includes(filter)))
 })

@@ -14,4 +14,9 @@ interface Appearance {
   borderColour: string
 }
 
-type Icon = 'vue' | 'react' | 'tw' | 'scss' | 'html' | 'css' | 'js' | 'ts'
+interface Tool {
+  name: ToolName
+  icon: string
+}
+
+type ToolName = 'vue' | 'react' | 'tw' | 'scss' | 'html' | 'css' | 'js' | 'ts'
