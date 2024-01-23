@@ -14,7 +14,7 @@
           <NuxtLink to="/">test</NuxtLink>
           <NuxtLink to="/things">things</NuxtLink>
         </div>
-        <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern">
+        <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" />
       </aside>
     </Transition>
   </header>
@@ -32,7 +32,7 @@ nav a {
 
 nav a::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   bottom: 0;

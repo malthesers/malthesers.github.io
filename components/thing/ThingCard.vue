@@ -11,18 +11,18 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  thing: Thing,
+  thing: Thing
   index: number
 }>()
 
 const enableFlip = ref<boolean>(true)
 
-const animation = computed<string>(() => enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : '')
+const animation = computed<string>(() => (enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : ''))
 </script>
 
 <style>
-article>div {
-  transform: perspective(40rem) rotateY(180deg)
+article > div {
+  transform: perspective(40rem) rotateY(180deg);
 }
 
 @keyframes flipped {

@@ -8,12 +8,7 @@ export default defineNuxtConfig({
     preset: 'github-pages'
   },
   devtools: { enabled: true },
-  modules: [
-    '@kevinmarrec/nuxt-pwa',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss',
-    'nuxt-icon'
-  ],
+  modules: ['@kevinmarrec/nuxt-pwa', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'nuxt-icon'],
   googleFonts: {
     display: 'swap',
     families: {
