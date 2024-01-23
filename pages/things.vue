@@ -33,15 +33,3 @@ useSeoMeta({
   // twitterCard: 'summary_large_image',
 })
 </script>
-
-<style scoped>
-/* .flip-enter-active,
-.flip-leave-active {
-  transition: all 250ms;
-}
-
-.flip-enter-from,
-.flip-leave-to {
-  transform: rotateY(180deg);
-} */
-</style>
