@@ -3,7 +3,11 @@
     <SplashScreen />
     <CavernTopTransition />
     <section>
-      <h2>yo</h2>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <TransitionGroup name="flip">
+          <ThingCard v-for="(thing, index) in showcasedThings" :key="thing.name" :thing="thing" :index="index" />
+        </TransitionGroup>
+      </div>
     </section>
   </main>
 </template>
@@ -20,7 +24,7 @@ useSeoMeta({
   // twitterCard: 'summary_large_image',
 })
 
-const showcase: Ref<string[]> = ref(['Diable III', 'Soulsborndle', "Pablo's Pizza"])
+const showcase: Ref<string[]> = ref(['Diable III', 'Soulsborndle', 'Hogwarts'])
 const showcasedThings: Ref<Thing[]> = computed(() => {
   return things.filter((thing) => showcase.value.includes(thing.name))
 })
