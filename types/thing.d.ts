@@ -1,8 +1,9 @@
 interface Thing {
   name: string
+  desc: string
+  year: number
   repo: string
   site: string
-  desc: string
   image: string
   tools: Icon[]
   appearance: Appearance

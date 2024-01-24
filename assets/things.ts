@@ -1,10 +1,10 @@
 export const things: Thing[] = [
   {
     name: 'Diable III',
-    repo: 'https://github.com/malthesers/diable-3',
-    year: 2023,
-    site: 'https://diable-3.vercel.app/',
     desc: 'Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties!',
+    year: 2023,
+    repo: 'https://github.com/malthesers/diable-3',
+    site: 'https://diable-3.vercel.app/',
     image: 'diable-3.png',
     tools: ['react', 'tw'],
     appearance: {
@@ -15,10 +15,10 @@ export const things: Thing[] = [
   },
   {
     name: 'Hallmark Christmatch',
+    desc: 'A memory game inspired by the most unpredictable and unique Christmas movies.',
     year: 2023,
     repo: 'https://github.com/malthesers/hallmark-christmatch',
     site: 'https://malthesers.github.io/hallmark-christmatch/',
-    desc: 'A memory game inspired by the most unpredictable and unique Christmas movies.',
     image: 'christmatch.png',
     tools: ['vue', 'tw'],
     appearance: {
@@ -29,10 +29,10 @@ export const things: Thing[] = [
   },
   {
     name: 'Soulsborndle',
+    desc: 'A Wordle-like Souls-like web game - guess the boss by using hints from your past guesses!',
     year: 2023,
     repo: 'https://github.com/malthesers/soulsborndle',
     site: 'https://malthesers.github.io/soulsborndle/',
-    desc: 'A Wordle-like Souls-like web game - guess the boss by using hints from your past guesses!',
     image: 'soulsborndle.png',
     tools: ['vue', 'tw'],
     appearance: {
@@ -43,10 +43,10 @@ export const things: Thing[] = [
   },
   {
     name: "Pablo's Pizza",
+    desc: "The famous pizzeria, Pablo's Pizza, is under attack and Pablo needs your help!",
     year: 2020,
     repo: 'https://github.com/malthesers/pablos-pizza',
     site: 'https://malthesers.github.io/pablos-pizza/',
-    desc: "The famous pizzeria, Pablo's Pizza, is under attack and Pablo needs your help!",
     image: 'pablos-pizza.png',
     tools: ['html', 'css', 'js'],
     appearance: {
@@ -57,10 +57,10 @@ export const things: Thing[] = [
   },
   {
     name: 'Hogwarts | Vue',
+    desc: 'Assume the role of a Hogwarts system administrator.',
     year: 2023,
     repo: 'https://github.com/malthesers/hogwarts-vue',
     site: 'https://malthesers.github.io/hogwarts-vue/',
-    desc: 'Assume the role of a Hogwarts system administrator.',
     image: 'hogwarts.png',
     tools: ['vue', 'tw'],
     appearance: {
@@ -71,10 +71,10 @@ export const things: Thing[] = [
   },
   {
     name: 'Hogwarts | React',
+    desc: 'Assume the role of a Hogwarts system administrator.',
     year: 2023,
     repo: 'https://github.com/malthesers/hogwarts-react',
     site: 'https://malthesers.github.io/hogwarts-react/',
-    desc: 'Assume the role of a Hogwarts system administrator.',
     image: 'hogwarts.png',
     tools: ['react', 'tw'],
     appearance: {
@@ -85,10 +85,10 @@ export const things: Thing[] = [
   },
   {
     name: 'Hogwarts',
+    desc: 'Assume the role of a Hogwarts system administrator.',
     year: 2021,
     repo: 'https://github.com/malthesers/hogwarts',
     site: 'https://malthesers.github.io/hogwarts/',
-    desc: 'Assume the role of a Hogwarts system administrator.',
     image: 'hogwarts.png',
     tools: ['html', 'css', 'js'],
     appearance: {
