@@ -9,6 +9,8 @@
 </template>
 
 <script setup lang="ts">
+import { things } from '~/assets/things'
+
 useSeoMeta({
   title: 'malthesers',
   ogTitle: 'malthesers',
@@ -16,5 +18,10 @@ useSeoMeta({
   ogDescription: 'portfolio of malthesers'
   // ogImage: 'https://example.com/image.png',
   // twitterCard: 'summary_large_image',
+})
+
+const showcase: Ref<string[]> = ref(['Diable III', 'Soulsborndle', "Pablo's Pizza"])
+const showcasedThings: Ref<Thing[]> = computed(() => {
+  return things.filter((thing) => showcase.value.includes(thing.name))
 })
 </script>
