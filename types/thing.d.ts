@@ -13,10 +13,3 @@ interface Appearance {
   textColour: string
   borderColour: string
 }
-
-interface Tool {
-  name: ToolName
-  icon: string
-}
-
-type ToolName = 'vue' | 'react' | 'tw' | 'scss' | 'html' | 'css' | 'js' | 'ts'
