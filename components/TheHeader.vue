@@ -11,8 +11,8 @@
     <Transition name="slide">
       <aside v-if="showMenu" class="relative z-10 sm:hidden">
         <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
-          <NuxtLink to="/">test</NuxtLink>
-          <NuxtLink to="/things">things</NuxtLink>
+          <NuxtLink @click="showMenu = false" to="/">test</NuxtLink>
+          <NuxtLink @click="showMenu = false" to="/things">things</NuxtLink>
         </div>
         <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" />
       </aside>
