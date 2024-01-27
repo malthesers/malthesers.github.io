@@ -20,8 +20,8 @@
   </header>
 </template>
 
-<script setup>
-const showMenu = ref(false)
+<script setup lang="ts">
+const showMenu: Ref<boolean> = ref(false)
 </script>
 
 <style scoped>
