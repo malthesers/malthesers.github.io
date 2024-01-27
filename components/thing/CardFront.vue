@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ backgroundImage: `url(/images/things/${thing.image})`, color: thing.appearance.textColour, borderColor: thing.appearance.borderColour }"
-    class="group absolute w-full h-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat border-4"
+    class="group absolute size-full rounded-xl backface-hidden flex flex-col bg-cover bg-center bg-no-repeat border-4"
   >
     <div class="bg-gradient-to-t from-black/50 mt-auto p-4 rounded-b-lg">
       <div class="text-center overflow-hidden mb-4">

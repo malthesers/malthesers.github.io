@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[100dvh] *:absolute *:left-0 *:top-0 *:w-full *:h-full *:bg-no-repeat *:bg-cover [&>:not(:last-child)]:bg-fixed">
+  <div class="h-[100dvh] *:absolute *:left-0 *:top-0 *:size-full *:bg-no-repeat *:bg-cover [&>:not(:last-child)]:bg-fixed">
     <div class="bg-[url(assets/images/splash-layers/layer-background.svg)]"></div>
     <div class="bg-[90%] bg-[url(assets/images/splash-layers/layer-moon.svg)]"></div>
     <div class="bg-[80%] bg-[url(assets/images/splash-layers/layer-mountain-far.svg)]"></div>
