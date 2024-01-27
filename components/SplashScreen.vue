@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[100dvh]">
+  <div class="h-[100dvh] *:absolute *:left-0 *:top-0 *:w-full *:h-full *:bg-no-repeat *:bg-cover [&>:not(:last-child)]:bg-fixed">
     <div class="layer-background"></div>
     <div class="layer-moon"></div>
     <div class="layer-mountain-far"></div>
@@ -13,20 +13,6 @@
 </template>
 
 <style scoped>
-[class^='layer'] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-[class^='layer']:not(:last-of-type) {
-  background-attachment: fixed;
-}
-
 .layer-background {
   background-image: url(assets/images/splash-layers/layer-background.svg);
   overflow: hidden;
