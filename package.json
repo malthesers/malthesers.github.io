@@ -1,9 +1,14 @@
 {
-  "author": "Malthe Kusk Lauritsen",
   "name": "malthesers",
   "short_name": "malthesers",
   "description": "portfolio of malthesers",
+  "author": "Malthesers (Malthe Kusk Lauritsen)",
+  "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malthesers/malthesers.github.io"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
