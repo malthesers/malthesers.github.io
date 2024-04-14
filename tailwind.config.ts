@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+
+import type { PluginAPI } from 'tailwindcss/types/config'
+
 module.exports = {
   content: ['components/**/*.{vue,js}', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.{js,ts}'],
   theme: {
     fontFamily: {
-      display: ['Montserrat', 'system-ui', 'sans-serif'],
+      display: ['Poppins', 'system-ui', 'sans-serif'],
       body: ['Roboto', 'system-ui', 'sans-serif'],
       jua: ['Jua', 'system-ui', 'sans-serif'],
       spectral: ['Spectral', 'system-ui', 'serif'],
@@ -21,5 +24,15 @@ module.exports = {
     }
   },
   safelist: ['font-jua', 'font-spectral', 'font-merienda', 'font-sacramento'],
-  plugins: []
+  plugins: [
+    ({ addUtilities }: PluginAPI) => {
+      addUtilities({
+        '.text-outline': {
+          color: 'transparent',
+          '-webkit-text-stroke-width': '2px',
+          '-webkit-text-stroke-color': '#FFEED3'
+        }
+      })
+    }
+  ]
 }

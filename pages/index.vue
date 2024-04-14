@@ -1,7 +1,8 @@
 <template>
   <main>
-    <SplashScreen />
-    <CavernTopTransition />
+    <!-- <SplashScreen />
+    <CavernTopTransition /> -->
+    <LandingScreen />
     <section class="flex flex-col items-center gap-8">
       <div class="flex flex-wrap gap-4 justify-center">
         <TransitionGroup name="flip">

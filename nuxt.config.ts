@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     display: 'swap',
     families: {
       Roboto: [400, 500],
+      Poppins: [600, 700, 800],
       Montserrat: [400, 500, 600],
       Jua: [400],
       Spectral: [500, 600],

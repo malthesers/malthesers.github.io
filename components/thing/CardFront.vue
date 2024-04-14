@@ -14,7 +14,7 @@
             <Icon name="uil:github" />
           </NuxtLink>
           <NuxtLink :to="thing.site" target="_blank" class="duration-200 hover:opacity-75">
-            <Icon name="uil:rocket" />
+            <Icon name="uil:external-link-alt" />
           </NuxtLink>
         </div>
         <div class="flex gap-2">
