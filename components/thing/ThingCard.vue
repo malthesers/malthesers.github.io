@@ -1,6 +1,6 @@
 <template>
   <article class="w-[18rem] h-[29rem]">
-    <div :style="{ animation: animation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
+    <div :style="{ animation: flipAnimation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
       <!-- Card back -->
       <ThingCardBack />
       <!-- Card front -->
@@ -16,8 +16,7 @@ const props = defineProps<{
 }>()
 
 const enableFlip = ref<boolean>(true)
-
-const animation = computed<string>(() => (enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : ''))
+const flipAnimation = computed<string>(() => (enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : ''))
 </script>
 
 <style>
