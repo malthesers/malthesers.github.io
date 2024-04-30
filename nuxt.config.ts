@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages'
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ['@kevinmarrec/nuxt-pwa', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'nuxt-icon'],
   googleFonts: {
     display: 'swap',
