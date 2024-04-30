@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <CavernBottomTransition />
+    <!-- <CavernBottomTransition /> -->
     <div class="bg-dark py-20 px-4">
       <div class="flex justify-center">
         <NuxtLink to="https://www.linkedin.com/in/malthe-kusk/" target="_blank" class="duration-200 hover:opacity-75">

@@ -1,12 +1,16 @@
 <template>
-  <section class="flex flex-col items-center gap-8">
-    <div class="flex flex-wrap gap-4 justify-center">
-      <TransitionGroup name="flip">
-        <ThingCard v-for="(thing, index) in showcasedThings" :key="thing.name" :thing="thing" :index="index" />
-      </TransitionGroup>
-    </div>
-    <NuxtLink to="things" class="text-xl">more things</NuxtLink>
-  </section>
+  <div>
+    <section>
+      <div class="flex flex-wrap gap-4 justify-center mb-4">
+        <TransitionGroup name="flip">
+          <ThingCard v-for="(thing, index) in showcasedThings" :key="thing.name" :thing="thing" :index="index" />
+        </TransitionGroup>
+      </div>
+      <div class="flex flex-row justify-center">
+        <NuxtLink to="things" class="text-xl">more things</NuxtLink>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script setup lang="ts">

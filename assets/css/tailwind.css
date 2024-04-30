@@ -7,8 +7,12 @@
     @apply bg-light text-accent font-body;
   }
 
+  div:has(> section) {
+    @apply min-h-dvh flex place-content-center;
+  }
+
   section {
-    @apply max-w-7xl mx-auto py-20 px-4;
+    @apply max-w-6xl w-full m-auto py-20 px-4;
   }
 
   h1 {

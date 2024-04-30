@@ -1,7 +1,7 @@
 <template>
   <Transition name="slide">
     <header v-if="showHeader" class="fixed z-10 w-full font-display font-medium">
-      <div class="relative flex z-20 justify-between bg-dark px-6 py-3">
+      <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
         <NuxtLink to="/" class="text-xl">malthesers</NuxtLink>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
@@ -57,7 +57,7 @@ nav a:hover::after,
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: transform 300ms ease;
+  transition: transform 300ms ease 200ms;
 }
 
 .slide-enter-from,
