@@ -1,6 +1,6 @@
 <template>
   <Transition name="slide">
-    <header v-if="showHeader" class="fixed z-10 w-full font-display font-medium">
+    <header v-if="showHeader" class="fixed z-50 w-full font-display font-medium">
       <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
         <NuxtLink to="/" class="text-xl">malthesers</NuxtLink>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>

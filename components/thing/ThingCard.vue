@@ -1,10 +1,14 @@
 <template>
-  <article class="w-[18rem] h-[29rem]">
-    <div :style="{ animation: flipAnimation }" class="flipped relative h-full preserve-3d duration-700 ease-in-out">
+  <article class="min-w-[18rem] w-[18rem] min-h-[29rem] h-[29rem]">
+    <div
+      @animationend="$emit('animationend')"
+      :style="{ animation: flipAnimation }"
+      class="flipped relative h-full preserve-3d duration-700 ease-in-out shadow-2xl"
+    >
       <!-- Card back -->
       <ThingCardBack />
       <!-- Card front -->
-      <ThingCardFront :thing="thing" />
+      <ThingCardFront :thing="thing" :enableHover="enableHover" />
     </div>
   </article>
 </template>
@@ -13,10 +17,13 @@
 const props = defineProps<{
   thing: Thing
   index: number
+  enableFlip: boolean
+  enableHover: boolean
 }>()
 
-const enableFlip = ref<boolean>(true)
-const flipAnimation = computed<string>(() => (enableFlip.value ? `flipped 500ms ease-in ${props.index * 100}ms both` : ''))
+defineEmits(['animationend'])
+
+const flipAnimation = computed<string>(() => (props.enableFlip ? `flipped 500ms ease-in ${props.index * 100}ms both` : ''))
 </script>
 
 <style>

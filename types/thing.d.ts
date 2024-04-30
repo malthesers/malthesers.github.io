@@ -1,6 +1,7 @@
 interface Thing {
   name: string
   desc: string
+  descDev?: string[]
   year: number
   repo: string
   site: string

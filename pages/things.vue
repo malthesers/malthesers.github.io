@@ -10,7 +10,7 @@
       </div>
       <div class="flex flex-wrap gap-4 justify-center">
         <TransitionGroup name="flip">
-          <ThingCard v-for="(thing, index) in filteredThings" :key="thing.name" :thing="thing" :index="index" />
+          <ThingCard v-for="(thing, index) in filteredThings" :key="thing.name" :thing="thing" :index="index" :enableFlip="true" :enableHover="true" />
         </TransitionGroup>
       </div>
     </section>

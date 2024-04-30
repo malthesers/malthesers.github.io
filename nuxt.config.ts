@@ -8,7 +8,13 @@ export default defineNuxtConfig({
     preset: 'github-pages'
   },
   devtools: { enabled: false },
-  modules: ['@kevinmarrec/nuxt-pwa', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'nuxt-icon'],
+  modules: ['@kevinmarrec/nuxt-pwa', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'nuxt-icon', '@hypernym/nuxt-gsap'],
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+      scrollTo: true
+    }
+  },
   googleFonts: {
     display: 'swap',
     families: {
