@@ -7,12 +7,12 @@
     @apply bg-light text-accent font-body;
   }
 
-  div:has(> section) {
-    @apply min-h-dvh flex place-content-center;
-  }
+  /* div:has(> section) {
+    @apply ;
+  } */
 
   section {
-    @apply max-w-6xl w-full m-auto py-20 px-4;
+    @apply max-w-6xl w-full mx-auto py-20 px-4;
   }
 
   h1 {
@@ -20,7 +20,11 @@
   }
 
   h2 {
-    @apply font-display font-medium text-2xl;
+    @apply font-display font-medium text-4xl text-center mb-4;
+  }
+
+  h2 + p:first-of-type {
+    @apply text-xl text-center mb-12;
   }
 
   a::after {

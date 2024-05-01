@@ -1,10 +1,13 @@
 <template>
   <div id="section-of-things">
-    <section class="space-y-12">
-      <h2 class="text-4xl text-center">Some Things</h2>
-      <ThingCardDisplay v-for="(thing, index) in showcasedThings" :thing="thing" :index="index" />
+    <section>
+      <h2>Some Things</h2>
+      <p>Below are some of the things I have created since starting my journey as developer.</p>
+      <div class="space-y-10 mb-12">
+        <ThingCardDisplay v-for="(thing, index) in showcasedThings" :thing="thing" :index="index" />
+      </div>
       <div class="flex flex-row justify-center">
-        <NuxtLink to="things" class="text-xl">more things</NuxtLink>
+        <NuxtLink to="things" class="text-xl">More Things</NuxtLink>
       </div>
     </section>
   </div>

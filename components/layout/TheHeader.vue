@@ -2,18 +2,20 @@
   <Transition name="slide">
     <header v-if="showHeader" class="fixed z-50 w-full font-display font-medium">
       <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
-        <NuxtLink to="#section-of-landing" class="text-xl">malthesers</NuxtLink>
+        <NuxtLink to="/#section-of-landing" class="text-xl">malthesers</NuxtLink>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
-          <NuxtLink to="/">test</NuxtLink>
-          <NuxtLink to="/things">things</NuxtLink>
+          <!-- <NuxtLink to="/">landing</NuxtLink> -->
+          <NuxtLink to="#section-of-things">things</NuxtLink>
+          <NuxtLink to="#section-of-contact">contact</NuxtLink>
         </nav>
       </div>
       <Transition name="slide">
         <aside v-if="showMenu" class="relative z-10 sm:hidden">
           <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
-            <NuxtLink @click="showMenu = false" to="/">test</NuxtLink>
-            <NuxtLink @click="showMenu = false" to="/things">things</NuxtLink>
+            <!-- <NuxtLink @click="showMenu = false" to="/">landing</NuxtLink> -->
+            <NuxtLink @click="showMenu = false" to="#section-of-things">things</NuxtLink>
+            <NuxtLink to="#section-of-contact">contact</NuxtLink>
           </div>
           <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" />
         </aside>
@@ -34,7 +36,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-nav a {
+/* nav a {
   position: relative;
   display: inline-block;
 }
@@ -53,7 +55,7 @@ nav a::after {
 nav a:hover::after,
 .router-link-active::after {
   transform: scaleX(1);
-}
+} */
 
 .slide-enter-active,
 .slide-leave-active {

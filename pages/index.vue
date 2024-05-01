@@ -4,6 +4,7 @@
     <CavernTopTransition /> -->
     <SectionOfLanding />
     <SectionOfThings />
+    <SectionOfContact />
     <!-- <LayoutMenuCards /> -->
   </main>
 </template>
@@ -16,5 +17,9 @@ useSeoMeta({
   ogDescription: 'portfolio of malthesers'
   // ogImage: 'https://example.com/image.png',
   // twitterCard: 'summary_large_image',
+})
+
+onMounted(() => {
+  console.log('👀👀👀')
 })
 </script>

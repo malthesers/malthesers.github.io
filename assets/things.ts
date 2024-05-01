@@ -94,7 +94,7 @@ export const things: Thing[] = [
     name: 'Hogwarts',
     desc: 'Assume the role of a Hogwarts system administrator.',
     descDev: [
-      "During the third semester's front-end elective while studying multimedia design at KEA, we were given the assignment of creating a Hogwarts student list user interface using simple HTML, CSS and JavaScript.",
+      'During the third semester of studying multimedia design at KEA, we were given the assignment of creating a Hogwarts student list UI using simple HTML, CSS and JavaScript.',
       'Since then I have used the project as an entrypoint for learning web development frameworks, having re-created the interface in a Vue and React.'
     ],
     year: 2021,

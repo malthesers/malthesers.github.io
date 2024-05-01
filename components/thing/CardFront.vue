@@ -5,7 +5,7 @@
   >
     <div class="bg-gradient-to-t from-black/50 mt-auto p-4 rounded-b-lg">
       <div class="text-center overflow-hidden mb-4">
-        <h2 :class="`font-${thing.appearance.fontFamily}`">{{ thing.name }}</h2>
+        <p class="font-medium text-2xl" :class="`font-${thing.appearance.fontFamily}`">{{ thing.name }}</p>
         <p class="max-h-0 group-hover:max-h-20 duration-300">{{ thing.desc }}</p>
       </div>
       <div class="flex justify-between">
