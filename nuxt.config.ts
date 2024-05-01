@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     baseURL: '/',
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
   nitro: {
     preset: 'github-pages'
   },

@@ -8,7 +8,7 @@
       <!-- Card back -->
       <ThingCardBack />
       <!-- Card front -->
-      <ThingCardFront :thing="thing" :enableHover="enableHover" />
+      <ThingCardFront :thing="thing" />
     </div>
   </article>
 </template>
@@ -18,7 +18,6 @@ const props = defineProps<{
   thing: Thing
   index: number
   enableFlip: boolean
-  enableHover: boolean
 }>()
 
 defineEmits(['animationend'])

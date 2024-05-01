@@ -4,6 +4,7 @@
     <CavernTopTransition /> -->
     <SectionOfLanding />
     <SectionOfThings />
+    <!-- <LayoutMenuCards /> -->
   </main>
 </template>
 

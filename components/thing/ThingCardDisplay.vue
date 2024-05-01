@@ -1,6 +1,6 @@
 <template>
   <div ref="nodeRef" class="group flex odd:flex-row even:flex-row-reverse justify-center max-w-3xl mx-auto">
-    <ThingCard class="z-10" @animationend="showInfo = true" :key="thing.name" :thing="thing" :index="1" :enableFlip="enableFlip" :enableHover="false" />
+    <ThingCard class="z-10" @animationend="showInfo = true" :key="thing.name" :thing="thing" :index="1" :enableFlip="enableFlip" />
     <Transition name="slide" @afterEnter="showText = true">
       <div
         v-if="showInfo"
@@ -8,10 +8,10 @@
         class="hidden sm:block w-full my-12 group-odd:rounded-r-2xl group-even:rounded-l-2xl overflow-hidden"
       >
         <Transition name="fade">
-          <div v-if="showText" class="my-auto p-6 text-wrap">
+          <div v-if="showText" class="p-6 text-wrap">
             <h3 :class="`font-${thing.appearance.fontFamily}`" class="text-4xl text-center mb-2">{{ thing.name }}</h3>
-            <p class="italic text-center">{{ thing.desc }}</p>
-            <MyDivider :color="thing.appearance.textColour" />
+            <!-- <p class="italic text-center">{{ thing.desc }}</p> -->
+            <!-- <MyDivider :color="thing.appearance.textColour" /> -->
             <p v-for="text in thing.descDev" class="text-pretty mb-2">{{ text }}</p>
           </div>
         </Transition>

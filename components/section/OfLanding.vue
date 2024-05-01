@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark">
+  <div id="section-of-landing" class="bg-dark">
     <section>
       <h1 class="*:block">
         <span class="text-3xl">Hi,</span>
