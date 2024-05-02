@@ -4,6 +4,8 @@
     <CavernTopTransition /> -->
     <SectionOfLanding />
     <SectionOfThings />
+    <SectionOfAbout />
+    <SectionOfSkills />
     <SectionOfContact />
     <!-- <LayoutMenuCards /> -->
   </main>

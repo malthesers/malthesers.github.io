@@ -1,5 +1,5 @@
 <template>
-  <div id="section-of-contact">
+  <div id="section-of-contact" class="bg-dark">
     <section>
       <h2>Get in touch</h2>
       <p>You can reach out to me through the platforms below.</p>

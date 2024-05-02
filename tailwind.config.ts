@@ -19,7 +19,8 @@ module.exports = {
         base: '#150027',
         dark: '#100019',
         light: '#29003D',
-        accent: '#FFEED3'
+        accent: '#FFD89A',
+        highlight: '#9D36FF'
       }
     }
   },

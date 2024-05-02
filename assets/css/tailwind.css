@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: theme(colors.accent) theme(colors.dark);
+  }
+
   body {
     @apply bg-light text-accent font-body;
   }
-
-  /* div:has(> section) {
-    @apply ;
-  } */
 
   section {
     @apply max-w-6xl w-full mx-auto py-20 px-4;
@@ -27,20 +28,8 @@
     @apply text-xl text-center mb-12;
   }
 
-  a::after {
-    @apply bg-accent;
-  }
-
-  ::-webkit-scrollbar {
-    @apply w-4;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-light;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-dark;
+  a {
+    @apply duration-200 hover:text-highlight;
   }
 }
 

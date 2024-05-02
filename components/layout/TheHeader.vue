@@ -7,6 +7,8 @@
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
           <!-- <NuxtLink to="/">landing</NuxtLink> -->
           <NuxtLink to="#section-of-things">things</NuxtLink>
+          <NuxtLink to="#section-of-about">about</NuxtLink>
+          <NuxtLink to="#section-of-skills">skills</NuxtLink>
           <NuxtLink to="#section-of-contact">contact</NuxtLink>
         </nav>
       </div>
@@ -15,6 +17,9 @@
           <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
             <!-- <NuxtLink @click="showMenu = false" to="/">landing</NuxtLink> -->
             <NuxtLink @click="showMenu = false" to="#section-of-things">things</NuxtLink>
+            <NuxtLink to="#section-of-things">things</NuxtLink>
+            <NuxtLink to="#section-of-about">about</NuxtLink>
+            <NuxtLink to="#section-of-skills">skills</NuxtLink>
             <NuxtLink to="#section-of-contact">contact</NuxtLink>
           </div>
           <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" />
