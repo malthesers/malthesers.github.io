@@ -27,7 +27,7 @@ onMounted(() => {
     duration: 1,
     scrollTrigger: {
       trigger: '#section-of-contact',
-      start: 'top 65%'
+      start: 'top 80%'
     }
   })
 })
