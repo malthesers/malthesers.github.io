@@ -1,0 +1,1 @@
+.thing-card>div{transform:perspective(40rem) rotateY(180deg)}@keyframes flipped{0%{transform:perspective(40rem) rotateY(180deg)}to{transform:perspective(40rem) rotateY(0)}}
