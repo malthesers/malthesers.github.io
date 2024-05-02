@@ -1,9 +1,9 @@
 <template>
   <article class="thing-card min-w-[18rem] w-[18rem] min-h-[29rem] h-[29rem]">
     <div
-      @animationend="$emit('animationend')"
       :style="{ animation: flipAnimation }"
       class="flipped relative h-full preserve-3d duration-700 ease-in-out shadow-2xl"
+      @animationend="$emit('animationend')"
     >
       <!-- Card back -->
       <ThingCardBack />

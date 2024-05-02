@@ -4,7 +4,7 @@
       <h2>Some Things</h2>
       <p>Below are some of the things I have created since starting my journey as developer.</p>
       <div class="space-y-10 mb-12">
-        <ThingCardDisplay v-for="(thing, index) in showcasedThings" :thing="thing" :index="index" />
+        <ThingCardDisplay v-for="(thing, index) in showcasedThings" :key="thing.name" :thing="thing" :index="index" />
       </div>
       <MyButton to="things">More Things</MyButton>
     </section>

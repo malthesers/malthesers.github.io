@@ -11,6 +11,9 @@ module.exports = {
   extends: ['@nuxtjs/eslint-config-typescript', 'plugin:prettier/recommended'],
   plugins: [],
   rules: {
+    'vue/attribute-hyphenation': 'off',
+    'vue/v-on-event-hyphenation': 'off',
+    'no-console': 'off',
     quotes: [
       'error',
       'single',

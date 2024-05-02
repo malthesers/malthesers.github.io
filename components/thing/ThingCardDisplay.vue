@@ -1,6 +1,6 @@
 <template>
   <div ref="nodeRef" class="group flex odd:flex-row even:flex-row-reverse justify-center mx-auto">
-    <ThingCard class="z-10" @animationend="showInfo = true" :key="thing.name" :thing="thing" :index="1" :enableFlip="enableFlip" />
+    <ThingCard :key="thing.name" class="z-10" :thing="thing" :index="1" :enableFlip="enableFlip" @animationend="showInfo = true" />
     <Transition name="slide" @afterEnter="showText = true">
       <div
         v-if="showInfo"
@@ -12,7 +12,7 @@
             <h3 :class="`font-${thing.appearance.fontFamily}`" class="text-4xl text-center mb-2">{{ thing.name }}</h3>
             <!-- <p class="italic text-center">{{ thing.desc }}</p> -->
             <!-- <MyDivider :color="thing.appearance.textColour" /> -->
-            <p v-for="text in thing.descDev" class="text-pretty mb-2">{{ text }}</p>
+            <p v-for="text in thing.descDev" :key="text" class="text-pretty mb-2">{{ text }}</p>
           </div>
         </Transition>
       </div>
