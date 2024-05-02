@@ -22,10 +22,10 @@ import { things } from '~/assets/things'
 // import { tools } from '~/assets/skills'
 
 useSeoMeta({
-  title: "malthesers' things",
-  ogTitle: "malthesers' things",
-  description: 'things of malthesers',
-  ogDescription: 'things of malthesers'
+  title: "Malthe Kusk's things",
+  ogTitle: "Malthe Kusk's things",
+  description: 'Things of Malthe Kusk',
+  ogDescription: 'Things of Malthe Kusk'
   // ogImage: 'https://example.com/image.png',
   // twitterCard: 'summary_large_image',
 })

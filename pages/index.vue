@@ -17,10 +17,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'malthesers',
-  ogTitle: 'malthesers',
-  description: 'portfolio of malthesers',
-  ogDescription: 'portfolio of malthesers'
+  title: 'Malthe Kusk',
+  ogTitle: 'Malthe Kusk',
+  description: 'Portfolio of Malthe Kusk',
+  ogDescription: 'Portfolio of Malthe Kusk'
   // ogImage: 'https://example.com/image.png',
   // twitterCard: 'summary_large_image',
 })
