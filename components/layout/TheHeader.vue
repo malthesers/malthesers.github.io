@@ -5,7 +5,6 @@
         <NuxtLink to="/#section-of-landing" class="text-xl">malthesers</NuxtLink>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
-          <!-- <NuxtLink to="/">landing</NuxtLink> -->
           <NuxtLink to="#section-of-things">things</NuxtLink>
           <NuxtLink to="#section-of-about">about</NuxtLink>
           <NuxtLink to="#section-of-skills">skills</NuxtLink>
@@ -33,9 +32,15 @@
 const showHeader: Ref<boolean> = ref(true)
 const showMenu: Ref<boolean> = ref(false)
 
+const { $ScrollTrigger } = useNuxtApp()
+
 onMounted(() => {
-  window.addEventListener('wheel', (e) => {
-    showHeader.value = e.deltaY < 100 ? true : false
+  console.log('👀👀👀')
+
+  $ScrollTrigger.create({
+    start: 'top top',
+    end: 'max',
+    onUpdate: (self) => (showHeader.value = self.direction === -1 ? true : false)
   })
 })
 </script>

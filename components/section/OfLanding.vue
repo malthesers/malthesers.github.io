@@ -24,12 +24,16 @@
 <script setup lang="ts">
 const { $gsap } = useNuxtApp()
 
+const tl = $gsap.timeline()
+const gsapFade: GSAPTweenVars = {
+  opacity: '100%',
+  duration: 0.4
+}
+
 onMounted(() => {
-  const tl = $gsap.timeline()
-  const gsapFade: GSAPTweenVars = {
-    opacity: '100%',
-    duration: 0.4
-  }
+  $gsap.set('*', {
+    clearProps: 'opacity'
+  })
 
   tl.to('#title-intro', gsapFade)
   tl.to('#title-name', gsapFade)
