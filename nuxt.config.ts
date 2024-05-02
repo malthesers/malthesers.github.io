@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/',
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      htmlAttrs: {
+        dir: 'ltr',
+        lang: 'en'
+      }
+    }
   },
   router: {
     options: {
@@ -21,6 +27,7 @@ export default defineNuxtConfig({
       description: 'Portfolio of Malthesers (Malthe Kusk Lauritsen)',
       theme_color: '#100019',
       background_color: '#100019',
+      lang: 'en',
       icons: [
         {
           src: 'maskable-icon-x48.png',

@@ -10,10 +10,10 @@
       </div>
       <div class="flex justify-between">
         <div class="flex gap-2">
-          <NuxtLink :to="thing.repo" target="_blank" class="duration-200 hover:opacity-70">
+          <NuxtLink :to="thing.repo" target="_blank" :aria-label="`GitHub repository of ${thing.name}`" class="duration-200 hover:opacity-70">
             <Icon name="uil:github" />
           </NuxtLink>
-          <NuxtLink :to="thing.site" target="_blank" class="duration-200 hover:opacity-70">
+          <NuxtLink :to="thing.site" target="_blank" :aria-label="`Deployment of ${thing.name}`" class="duration-200 hover:opacity-70">
             <Icon name="uil:external-link-alt" />
           </NuxtLink>
         </div>

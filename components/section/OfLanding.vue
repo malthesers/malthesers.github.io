@@ -14,7 +14,12 @@
           <span>.</span>
         </p>
       </div>
-      <NuxtLink id="title-chevron" to="#section-of-things" class="mt-auto text-center duration-200 hover:text-highlight">
+      <NuxtLink
+        id="title-chevron"
+        to="#section-of-things"
+        aria-label="Scroll down to things section"
+        class="mt-auto text-center duration-200 hover:text-highlight"
+      >
         <Icon name="mdi:chevron-down" />
       </NuxtLink>
     </section>
