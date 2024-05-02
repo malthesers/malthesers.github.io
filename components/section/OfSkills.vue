@@ -1,6 +1,6 @@
 <template>
   <div id="section-of-skills">
-    <section>
+    <section class="opacity-0">
       <h2>Skills & Tools</h2>
       <p>Throughout my studies and spare time I have picked up some experience with these tools.</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 place-content-center">
@@ -16,4 +16,17 @@
 
 <script setup lang="ts">
 import { skills } from '~/assets/skills'
+
+const { $gsap } = useNuxtApp()
+
+onMounted(() => {
+  $gsap.to('#section-of-skills > section', {
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '#section-of-skills',
+      start: 'top 65%'
+    }
+  })
+})
 </script>
