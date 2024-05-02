@@ -6,9 +6,7 @@
       <div class="space-y-10 mb-12">
         <ThingCardDisplay v-for="(thing, index) in showcasedThings" :thing="thing" :index="index" />
       </div>
-      <div class="flex flex-row justify-center">
-        <NuxtLink to="things" class="text-xl">More Things</NuxtLink>
-      </div>
+      <MyButton to="things">More Things</MyButton>
     </section>
   </div>
 </template>

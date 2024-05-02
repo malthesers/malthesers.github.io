@@ -2,26 +2,24 @@
   <Transition name="slide">
     <header v-if="showHeader" class="fixed z-50 w-full font-display font-medium">
       <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
-        <NuxtLink to="/#section-of-landing" class="text-xl">malthesers</NuxtLink>
+        <NuxtLink to="/#section-of-landing" class="text-xl">M</NuxtLink>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
-          <NuxtLink to="#section-of-things">things</NuxtLink>
-          <NuxtLink to="#section-of-about">about</NuxtLink>
-          <NuxtLink to="#section-of-skills">skills</NuxtLink>
-          <NuxtLink to="#section-of-contact">contact</NuxtLink>
+          <NuxtLink to="#section-of-things">Things</NuxtLink>
+          <NuxtLink to="#section-of-about">About</NuxtLink>
+          <NuxtLink to="#section-of-skills">Skills</NuxtLink>
+          <NuxtLink to="#section-of-contact">Contact</NuxtLink>
         </nav>
       </div>
       <Transition name="slide">
         <aside v-if="showMenu" class="relative z-10 sm:hidden">
           <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
-            <!-- <NuxtLink @click="showMenu = false" to="/">landing</NuxtLink> -->
-            <NuxtLink @click="showMenu = false" to="#section-of-things">things</NuxtLink>
-            <NuxtLink to="#section-of-things">things</NuxtLink>
-            <NuxtLink to="#section-of-about">about</NuxtLink>
-            <NuxtLink to="#section-of-skills">skills</NuxtLink>
-            <NuxtLink to="#section-of-contact">contact</NuxtLink>
+            <NuxtLink to="#section-of-things">Things</NuxtLink>
+            <NuxtLink to="#section-of-about">About</NuxtLink>
+            <NuxtLink to="#section-of-skills">Skills</NuxtLink>
+            <NuxtLink to="#section-of-contact">Contact</NuxtLink>
           </div>
-          <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" />
+          <!-- <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" /> -->
         </aside>
       </Transition>
     </header>

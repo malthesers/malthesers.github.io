@@ -3,9 +3,13 @@
     <!-- <SplashScreen />
     <CavernTopTransition /> -->
     <SectionOfLanding />
+    <CavernTopTransition />
     <SectionOfThings />
+    <CavernBottomTransition class="-scale-x-100" />
     <SectionOfAbout />
+    <CavernTopTransition class="-scale-x-100" />
     <SectionOfSkills />
+    <CavernBottomTransition />
     <SectionOfContact />
     <!-- <LayoutMenuCards /> -->
   </main>
