@@ -10,7 +10,7 @@
           <NuxtLink to="#section-of-contact">Contact</NuxtLink>
         </nav>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">
-          <Transition mode="out-in" name="fade" :key="showMenu">
+          <Transition :key="showMenu" mode="out-in" name="fade">
             <Icon v-if="!showMenu" name="gravity-ui:bars-descending-align-right" size="24" />
             <Icon v-else name="gravity-ui:xmark" size="28" />
           </Transition>
@@ -56,7 +56,6 @@ watch(showMenu, () => {
 })
 
 onMounted(() => {
-  /* eslint no-console: "error" */
   console.log('👀👀👀')
 
   $ScrollTrigger.create({
