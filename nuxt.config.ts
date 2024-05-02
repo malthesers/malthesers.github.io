@@ -14,6 +14,43 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: false },
   modules: ['@vite-pwa/nuxt', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', 'nuxt-icon', '@hypernym/nuxt-gsap'],
+  pwa: {
+    manifest: {
+      name: "Malthe Kusk's Portfolio",
+      short_name: 'Malthe Kusk',
+      description: 'Portfolio of Malthesers (Malthe Kusk Lauritsen)',
+      theme_color: '#100019',
+      background_color: '#100019',
+      icons: [
+        {
+          src: 'maskable-icon-x48.png',
+          sizes: '48x48',
+          type: 'image/png'
+        },
+        {
+          src: 'maskable-icon-x96.png',
+          sizes: '96x96',
+          type: 'image/png'
+        },
+        {
+          src: 'maskable-icon-x128.png',
+          sizes: '128x128',
+          type: 'image/png'
+        },
+        {
+          src: 'maskable-icon-x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: 'maskable-icon-x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable'
+        }
+      ]
+    }
+  },
   gsap: {
     extraPlugins: {
       scrollTrigger: true,

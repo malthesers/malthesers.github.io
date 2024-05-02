@@ -15,7 +15,7 @@
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "preview": "npx serve .output/public",
-    "deploy": "npx gh-pages -d .output/public -t true",
+    "deploy": "npx gh-pages --dotfiles -d .output/public",
     "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {

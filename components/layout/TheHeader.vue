@@ -33,6 +33,7 @@ const showMenu: Ref<boolean> = ref(false)
 const { $ScrollTrigger } = useNuxtApp()
 
 onMounted(() => {
+  /* eslint no-console: "error" */
   console.log('👀👀👀')
 
   $ScrollTrigger.create({
