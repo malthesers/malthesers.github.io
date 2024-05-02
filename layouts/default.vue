@@ -4,6 +4,6 @@
     <main>
       <slot />
     </main>
-    <!-- <LayoutTheFooter /> -->
+    <LayoutTheFooter />
   </div>
 </template>

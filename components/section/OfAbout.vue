@@ -10,7 +10,7 @@
           <NuxtLink to="https://www.kea.dk/">KEA</NuxtLink>
           <span> with an AP degree in </span>
           <NuxtLink to="https://kea.dk/en/programmes/academy-profession-degree/multimedia-design">multimedia design</NuxtLink>
-          <span>- I am now studying - </span>
+          <span> - I am now studying - </span>
           <NuxtLink to="https://kea.dk/en/programmes/top-up-bachelor-degree/web-development">web development</NuxtLink>
           <span> also at KEA, while looking for an </span>
           <span class="text-highlight">internship </span>
