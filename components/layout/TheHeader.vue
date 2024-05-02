@@ -38,7 +38,7 @@ onMounted(() => {
   console.log('👀👀👀')
 
   $ScrollTrigger.create({
-    start: 'top top',
+    start: 'top',
     end: 'max',
     onUpdate: (self) => (showHeader.value = self.direction === -1 ? true : false)
   })
