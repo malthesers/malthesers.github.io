@@ -1,27 +1,32 @@
 <template>
-  <Transition name="slide">
+  <Transition name="slide-down">
     <header v-if="showHeader" class="fixed z-50 w-full font-display font-medium">
       <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
         <NuxtLink to="/#section-of-landing" class="text-xl">M</NuxtLink>
-        <button class="sm:hidden text-xl" @click="showMenu = !showMenu">{{ showMenu ? '-' : '+' }}</button>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
           <NuxtLink to="#section-of-things">Things</NuxtLink>
           <NuxtLink to="#section-of-about">About</NuxtLink>
           <NuxtLink to="#section-of-skills">Skills</NuxtLink>
           <NuxtLink to="#section-of-contact">Contact</NuxtLink>
         </nav>
+        <button class="sm:hidden text-xl" @click="showMenu = !showMenu">
+          <Transition mode="out-in" name="fade" :key="showMenu">
+            <Icon v-if="!showMenu" name="gravity-ui:bars-descending-align-right" size="24" />
+            <Icon v-else name="gravity-ui:xmark" size="28" />
+          </Transition>
+        </button>
       </div>
-      <Transition name="slide">
-        <aside v-if="showMenu" class="relative z-10 sm:hidden">
-          <div class="flex flex-col gap-4 text-lg bg-dark px-6 py-3">
-            <NuxtLink to="#section-of-things">Things</NuxtLink>
-            <NuxtLink to="#section-of-about">About</NuxtLink>
-            <NuxtLink to="#section-of-skills">Skills</NuxtLink>
-            <NuxtLink to="#section-of-contact">Contact</NuxtLink>
-          </div>
-          <!-- <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" /> -->
-        </aside>
-      </Transition>
+      <!-- <Transition name="slide-in"> -->
+      <aside id="mobile-menu" class="relative z-10 sm:hidden">
+        <nav class="flex flex-col text-lg *:px-6 *:py-3 *:bg-dark *:bg-opacity-50 *:backdrop-blur-xl *:translate-x-full">
+          <NuxtLink to="#section-of-things">Things</NuxtLink>
+          <NuxtLink to="#section-of-about">About</NuxtLink>
+          <NuxtLink to="#section-of-skills">Skills</NuxtLink>
+          <NuxtLink to="#section-of-contact">Contact</NuxtLink>
+        </nav>
+        <!-- <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" /> -->
+      </aside>
+      <!-- </Transition> -->
     </header>
   </Transition>
 </template>
@@ -30,7 +35,25 @@
 const showHeader: Ref<boolean> = ref(true)
 const showMenu: Ref<boolean> = ref(false)
 
-const { $ScrollTrigger } = useNuxtApp()
+const { $gsap, $ScrollTrigger } = useNuxtApp()
+
+watch(showMenu, () => {
+  if (showMenu.value) {
+    $gsap.to('#mobile-menu > nav > a', {
+      duration: 0.1,
+      stagger: 0.1,
+      x: '0%',
+      ease: 'back.in'
+    })
+  } else {
+    $gsap.to('#mobile-menu > nav > a', {
+      duration: 0.1,
+      stagger: -0.1,
+      x: '100%',
+      ease: 'back.in'
+    })
+  }
+})
 
 onMounted(() => {
   /* eslint no-console: "error" */
@@ -39,40 +62,42 @@ onMounted(() => {
   $ScrollTrigger.create({
     start: 'top',
     end: 'max',
-    onUpdate: (self) => (showHeader.value = self.direction === -1)
+    onUpdate: (self) => {
+      showHeader.value = self.direction === -1
+      showMenu.value = false
+    }
   })
 })
 </script>
 
 <style scoped>
-/* nav a {
-  position: relative;
-  display: inline-block;
-}
-
-nav a::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  transition: transform 200ms ease-out;
-  transform: scaleX(0);
-}
-
-nav a:hover::after,
-.router-link-active::after {
-  transform: scaleX(1);
-} */
-
-.slide-enter-active,
-.slide-leave-active {
+.slide-down-enter-active,
+.slide-down-leave-active {
   transition: transform 300ms ease 200ms;
 }
 
-.slide-enter-from,
-.slide-leave-to {
+.slide-down-enter-from,
+.slide-down-leave-to {
   transform: translateY(-100%);
+}
+
+.slide-in-enter-active,
+.slide-in-leave-active {
+  transition: transform 300ms ease;
+}
+
+.slide-in-enter-from,
+.slide-in-leave-to {
+  transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 300ms ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
