@@ -13,7 +13,7 @@
   }
 
   section {
-    @apply max-w-6xl w-full mx-auto py-20 px-4;
+    @apply max-w-3xl w-full mx-auto py-20 px-4;
   }
 
   h1 {
@@ -25,21 +25,12 @@
   }
 
   h2 + p:first-of-type {
-    @apply text-xl text-center mb-12;
+    @apply text-xl text-center text-balance mb-12;
   }
 
-  a {
+  nav a {
     @apply duration-200 hover:text-highlight;
   }
-}
-
-.preserve-3d {
-  transform-style: preserve-3d;
-}
-
-.backface-hidden {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .page-enter-active,

@@ -32,6 +32,19 @@ module.exports = {
           color: 'transparent',
           '-webkit-text-stroke-width': '2px',
           '-webkit-text-stroke-color': '#FFEED3'
+        },
+        '.preserve-3d': {
+          'transform-style': 'preserve-3d'
+        },
+        '.backface-hidden': {
+          '-webkit-backface-visibility': 'hidden',
+          'backface-visibility': 'hidden'
+        },
+        '.grid-center': {
+          'grid-column-start': '1',
+          'grid-column-end': '1',
+          'grid-row-start': '1',
+          'grid-row-end': '1'
         }
       })
     }

@@ -1,5 +1,5 @@
 <template>
-  <article class="min-w-[18rem] w-[18rem] min-h-[29rem] h-[29rem]">
+  <article class="thing-card min-w-[18rem] w-[18rem] min-h-[29rem] h-[29rem]">
     <div
       @animationend="$emit('animationend')"
       :style="{ animation: flipAnimation }"
@@ -26,7 +26,7 @@ const flipAnimation = computed<string>(() => (props.enableFlip ? `flipped 500ms 
 </script>
 
 <style>
-article > div {
+.thing-card > div {
   transform: perspective(40rem) rotateY(180deg);
 }
 

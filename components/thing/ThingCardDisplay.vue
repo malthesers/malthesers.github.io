@@ -1,5 +1,5 @@
 <template>
-  <div ref="nodeRef" class="group flex odd:flex-row even:flex-row-reverse justify-center max-w-3xl mx-auto">
+  <div ref="nodeRef" class="group flex odd:flex-row even:flex-row-reverse justify-center mx-auto">
     <ThingCard class="z-10" @animationend="showInfo = true" :key="thing.name" :thing="thing" :index="1" :enableFlip="enableFlip" />
     <Transition name="slide" @afterEnter="showText = true">
       <div
