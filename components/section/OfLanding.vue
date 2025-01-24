@@ -7,10 +7,8 @@
           <span id="title-name" class="fade-in text-7xl sm:text-8xl md:text-9xl">Malthe.</span>
         </h1>
         <p id="title-tag" class="text-xl md:text-2xl font-display text-balance">
-          <span>A </span>
-          <span class="text-highlight">front-end web developer </span>
-          <span>looking for an </span>
-          <span class="text-highlight">internship</span>
+          <span>A recently graduated </span>
+          <span class="text-highlight">web developer </span>
           <span>.</span>
         </p>
       </div>
