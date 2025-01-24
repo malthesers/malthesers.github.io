@@ -4,10 +4,10 @@
       <div class="relative bg-dark bg-opacity-50 backdrop-blur-xl flex z-20 justify-between px-6 py-3">
         <NuxtLink to="/#section-of-landing" class="text-xl">M</NuxtLink>
         <nav class="hidden sm:flex gap-4 place-items-center text-lg">
-          <NuxtLink to="#section-of-things">Things</NuxtLink>
-          <NuxtLink to="#section-of-about">About</NuxtLink>
-          <NuxtLink to="#section-of-skills">Skills</NuxtLink>
-          <NuxtLink to="#section-of-contact">Contact</NuxtLink>
+          <NuxtLink to="/#section-of-things">Things</NuxtLink>
+          <NuxtLink to="/#section-of-about">About</NuxtLink>
+          <NuxtLink to="/#section-of-skills">Skills</NuxtLink>
+          <NuxtLink to="/#section-of-contact">Contact</NuxtLink>
         </nav>
         <button class="sm:hidden text-xl" @click="showMenu = !showMenu">
           <Transition :key="showMenu" mode="out-in" name="fade">
@@ -19,10 +19,10 @@
       <!-- <Transition name="slide-in"> -->
       <aside id="mobile-menu" class="relative z-10 sm:hidden">
         <nav class="flex flex-col text-lg *:px-6 *:py-3 *:bg-dark *:bg-opacity-50 *:backdrop-blur-xl *:translate-x-full">
-          <NuxtLink to="#section-of-things">Things</NuxtLink>
-          <NuxtLink to="#section-of-about">About</NuxtLink>
-          <NuxtLink to="#section-of-skills">Skills</NuxtLink>
-          <NuxtLink to="#section-of-contact">Contact</NuxtLink>
+          <NuxtLink to="/#section-of-things">Things</NuxtLink>
+          <NuxtLink to="/#section-of-about">About</NuxtLink>
+          <NuxtLink to="/#section-of-skills">Skills</NuxtLink>
+          <NuxtLink to="/#section-of-contact">Contact</NuxtLink>
         </nav>
         <!-- <img src="~/assets/images/cavern-transitions/cavern-top-front.svg" alt="header bottom cavern" /> -->
       </aside>
