@@ -38,7 +38,8 @@ module.exports = {
         },
         '.backface-hidden': {
           '-webkit-backface-visibility': 'hidden',
-          'backface-visibility': 'hidden'
+          'backface-visibility': 'hidden',
+          transform: 'rotateX(0deg)'
         },
         '.grid-center': {
           'grid-column-start': '1',
