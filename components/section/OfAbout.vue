@@ -9,8 +9,8 @@
           <span>. I previously graduated from </span>
           <NuxtLink to="https://www.kea.dk/">KEA</NuxtLink>
           <span> with an AP degree in </span>
-          <NuxtLink to="https://kea.dk/uddannelser/erhvervsakademi/multimediedesigner">multimedia design </NuxtLink>
-          <span>and a bachelor's degree in </span>
+          <NuxtLink to="https://kea.dk/uddannelser/erhvervsakademi/multimediedesigner">multimedia design</NuxtLink>
+          <span> and a bachelor's degree in </span>
           <NuxtLink to="https://kea.dk/uddannelser/top-up/webudvikling">web development</NuxtLink>
           <span>.</span>
         </p>
